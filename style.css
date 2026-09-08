@@ -24,6 +24,7 @@
   --rule: #e8e6dc;      /* ivory dark */
   --accent: #0072bb;        /* French blue: links, active nav */
   --accent-hover: #005a94;  /* darker French blue on hover */
+  --lilac: #86608e;         /* French lilac: highlights */
   --card: #f0eee6;      /* ivory medium */
   --max: 720px;
 }
@@ -98,7 +99,7 @@ ol.papers li:last-child, ul.plain li:last-child { border-bottom: 0; }
 .timeline ul.sub li { padding: 4px 0 4px 16px; border-left: 2px solid var(--rule); }
 .timeline ul.sub li::before { display: none; }
 
-strong.lead { color: var(--accent); font-weight: 700; }
+strong.lead { color: var(--lilac); font-weight: 700; }
 a.bracket::before { content: "["; }
 a.bracket::after { content: "]"; }
 ul.prs { list-style: square; padding-left: 22px; margin: 0 0 16px; }

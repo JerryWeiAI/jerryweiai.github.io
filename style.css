@@ -38,16 +38,25 @@ body {
   font-size: 16px;
   line-height: 1.6;
 }
-a { color: var(--accent); text-decoration: none; }
-a:hover { color: var(--accent-hover); }
-/* Underline draws in from the left on hover for links without a standing underline. */
-a.draw, p a:not(.bracket):not(.ul):not(.button), nav a, ul.tl a, ul.talks .what a:not(.ul) {
+/* Every link draws its underline with a background gradient so it can animate.
+   Plain links draw a line in from the left on hover. Links with a standing
+   underline get a second, colored line that sweeps across on hover. */
+a {
+  --sweep: var(--lilac);
+  color: var(--accent); text-decoration: none;
   background-image: linear-gradient(currentColor, currentColor);
   background-size: 0% 1px; background-repeat: no-repeat; background-position: 0 100%;
-  transition: background-size 0.22s ease, color 0.15s ease;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+  transition: background-size 0.25s ease, color 0.15s ease;
 }
-a.draw:hover, p a:not(.bracket):not(.ul):not(.button):hover, nav a:hover, ul.tl a:hover { background-size: 100% 1px; }
-a.bracket:hover, a.ul:hover, ul.pubs .ptitle a:hover, dl.contact dd a:hover, ul.talks .what a:hover { text-decoration: underline; }
+a:hover { color: var(--accent-hover); background-size: 100% 1px; }
+a.bracket, a.ul, ul.pubs .ptitle a, dl.contact dd a, ul.talks .what a {
+  background-image: linear-gradient(var(--sweep), var(--sweep)), linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px, 100% 1px;
+}
+a.bracket:hover, a.ul:hover, ul.pubs .ptitle a:hover, dl.contact dd a:hover, ul.talks .what a:hover { background-size: 100% 1px, 100% 1px; }
+.socials a, .logo, a.button { background-image: none; }
+.bk { color: var(--accent); }
 img { max-width: 100%; height: auto; }
 
 .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
@@ -95,13 +104,12 @@ main.home .block h2 { margin-top: 0; }
 .socials a:hover img { opacity: 1; }
 .socials .label { margin-top: 14px; font-weight: 700; }
 a.ptitle { color: var(--lilac); }
-a.ptitle:hover { color: var(--lilac); }
+a.ptitle:hover { color: var(--lilac); --sweep: var(--accent); }
 ul.selected { list-style: none; padding: 0; margin: 0; }
 ul.selected li { padding: 7px 0; }
 ul.talks { list-style: none; padding: 0; margin: 0; }
 ul.talks li { display: flex; gap: 24px; padding: 8px 0; align-items: baseline; }
 ul.talks .when { flex: 0 0 110px; font-size: 0.9rem; font-variant-numeric: tabular-nums; }
-ul.talks .what a { text-decoration: underline; }
 
 ul.tl { list-style: none; padding: 0; margin: 0; }
 ul.tl li { display: grid; grid-template-columns: 64px 1fr; gap: 0 24px; padding: 22px 0; border-bottom: 1px solid #cfcdc4; }
@@ -119,11 +127,6 @@ ul.tl .stem::before, ul.tl .stem::after { content: ""; position: absolute; left:
 ul.tl .stem::before { top: -4px; }
 ul.tl .stem::after { bottom: -4px; }
 strong.lead { color: var(--lilac); font-weight: 700; }
-a.ul { text-decoration: underline; }
-a.bracket { text-decoration: underline; }
-a.bracket::before { content: "["; }
-a.bracket::after { content: "]"; }
-a.bracket::before, a.bracket::after { display: inline-block; text-decoration: none; }
 ul.prs { list-style: square; padding-left: 22px; margin: 0 0 16px; }
 ul.prs li { padding: 3px 0; }
 
@@ -132,7 +135,6 @@ dl.contact div { padding: 9px 0; }
 dl.contact dt, dl.contact dd { display: inline; margin: 0; }
 dl.contact dt { font-weight: 700; }
 dl.contact dt::after { content: ": "; white-space: pre; }
-dl.contact dd a { text-decoration: underline; }
 
 figure { margin: 20px 0; }
 figure img { border-radius: 10px; display: block; }
@@ -148,11 +150,11 @@ h2.year { text-decoration: underline; text-underline-offset: 6px; margin: 40px 0
 ul.pubs { list-style: none; padding: 0; margin: 0; line-height: 1.6; }
 ul.pubs li { padding: 10px 0 14px; }
 ul.pubs .ptitle { font-size: 1.15rem; line-height: 1.4; margin-bottom: 4px; }
-ul.pubs .ptitle a { text-decoration: underline; }
 ul.pubs .caret { margin-left: 0; color: var(--accent); }
 ul.pubs .me { font-weight: 700; background: #dcd0ff; border-radius: 3px; padding: 0 3px; }
 ul.pubs .venue { color: var(--lilac); }
-ul.pubs .meta a.bracket { color: var(--lilac); }
+ul.pubs .meta a.bracket { color: var(--lilac); --sweep: var(--accent); }
+ul.pubs .meta .bk { color: var(--lilac); }
 ul.pubs .note { color: var(--muted); font-size: 0.9rem; margin-top: 2px; }
 
 /* Waving hand: one gentle wave on load, then still */

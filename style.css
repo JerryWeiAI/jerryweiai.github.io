@@ -151,7 +151,7 @@ ul.pubs { list-style: none; padding: 0; margin: 0; line-height: 1.6; }
 ul.pubs li { padding: 10px 0 14px; }
 ul.pubs .ptitle { font-size: 1.15rem; line-height: 1.4; margin-bottom: 4px; }
 ul.pubs .caret { margin-left: 0; color: var(--accent); }
-ul.pubs .me { font-weight: 700; background: #dcd0ff; border-radius: 3px; padding: 0 3px; }
+ul.pubs .me { font-weight: 700; background: rgba(174, 198, 207, 0.5); border-radius: 3px; padding: 0 3px; }
 ul.pubs .venue { color: var(--lilac); }
 ul.pubs .meta a.bracket { color: var(--lilac); --sweep: var(--accent); }
 ul.pubs .meta .bk { color: var(--lilac); }

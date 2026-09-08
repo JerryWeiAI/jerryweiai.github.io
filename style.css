@@ -176,7 +176,7 @@ ul.pubs .ptitle .dot { position: absolute; left: -18px; top: 0.7em; }
 .filters a[aria-pressed="true"] { font-weight: 700; }
 ul.pubs li.hide, h2.year.hide { display: none; }
 .copy-link {
-  position: absolute; right: -22px; top: 0.35em; padding: 0; border: 0; background: none; color: var(--accent); cursor: pointer;
+  position: absolute; left: 0; top: 0; padding: 0; border: 0; background: none; color: var(--accent); cursor: pointer;
   opacity: 0; transition: opacity 0.15s ease;
 }
 .copy-link svg { width: 15px; height: 15px; display: block; }

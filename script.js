@@ -72,6 +72,18 @@
     });
     li.querySelector('.ptitle').appendChild(b);
   });
+  // Place each copy button just after the last character of its title, even when the title wraps.
+  function placeCopyLinks() {
+    document.querySelectorAll('ul.pubs > li .copy-link').forEach(function (b) {
+      var box = b.parentNode, last = box.querySelector('.caret') || box.querySelector('a');
+      var rects = last.getClientRects(); if (!rects.length) return;
+      var r = rects[rects.length - 1], p = box.getBoundingClientRect();
+      b.style.left = (r.right - p.left + 6) + 'px';
+      b.style.top = (r.top - p.top + (r.height - b.offsetHeight) / 2) + 'px';
+    });
+  }
+  placeCopyLinks(); window.addEventListener('resize', placeCopyLinks);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(placeCopyLinks);
 
   // Paper anchors: jump to the entry and flash it.
   function flashHash() {

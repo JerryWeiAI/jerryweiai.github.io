@@ -1,0 +1,647 @@
+{
+  "me": "Jerry Wei",
+  "papers": [
+    {
+      "id": "jailbroken-frontier-models-retain-their-capabilities",
+      "year": 2026,
+      "title": "Jailbroken Frontier Models Retain Their Capabilities",
+      "url": "https://arxiv.org/abs/2605.00267",
+      "authors": [
+        "Daniel Zhu",
+        "Zihan Wang",
+        "Jenny Bao",
+        "Jerry Wei"
+      ]
+    },
+    {
+      "id": "poisoning-fine-tuning-datasets-of-constitutional",
+      "year": 2026,
+      "title": "Poisoning Fine-tuning Datasets of Constitutional Classifiers",
+      "url": "https://alignment.anthropic.com/2026/backdooring-classifiers/",
+      "authors": [
+        "Chase Bowers",
+        "Faizan Ali",
+        "John Hughes",
+        "Jerry Wei",
+        "Fabien Roger"
+      ],
+      "links": [
+        {
+          "label": "Anthropic blog",
+          "url": "https://alignment.anthropic.com/2026/backdooring-classifiers/"
+        }
+      ],
+      "blog_only": true
+    },
+    {
+      "id": "segment-level-coherence-for-robust-harmful",
+      "year": 2026,
+      "title": "Segment-Level Coherence for Robust Harmful Intent Probing in LLMs",
+      "url": "https://arxiv.org/abs/2604.14865",
+      "authors": [
+        "Xuanli He",
+        "Bilgehan Sel",
+        "Faizan Ali",
+        "Jenny Bao",
+        "Hoagy Cunningham",
+        "Jerry Wei"
+      ]
+    },
+    {
+      "id": "trojan-speak-bypassing-constitutional-classifiers-with",
+      "year": 2026,
+      "title": "Trojan-Speak: Bypassing Constitutional Classifiers with No Jailbreak Tax via Adversarial Finetuning",
+      "url": "https://arxiv.org/abs/2603.29038",
+      "authors": [
+        "Bilgehan Sel",
+        "Xuanli He",
+        "Alwin Peng",
+        "Ming Jin",
+        "Jerry Wei"
+      ],
+      "venue": "ICML 2026"
+    },
+    {
+      "id": "constitutional-classifiers-efficient-production-grade-defenses",
+      "year": 2026,
+      "title": "Constitutional Classifiers++: Efficient Production-Grade Defenses against Universal Jailbreaks",
+      "url": "https://arxiv.org/abs/2601.04603",
+      "authors": [
+        "Hoagy Cunningham*",
+        "Jerry Wei*",
+        "Zihan Wang",
+        "Andrew Persic",
+        "Alwin Peng",
+        "Jordan Abderrachid",
+        "Raj Agarwal",
+        "Bobby Chen",
+        "Austin Cohen",
+        "Andy Dau",
+        "Alek Dimitriev",
+        "Rob Gilson",
+        "Logan Howard",
+        "Yijin Hua",
+        "Jared Kaplan",
+        "Jan Leike",
+        "Mu Lin",
+        "Christopher Liu",
+        "Vladimir Mikulik",
+        "Rohit Mittapalli",
+        "Clare O'Hara",
+        "Jin Pan",
+        "Nikhil Saxena",
+        "Alex Silverstein",
+        "Yue Song",
+        "Xunjie Yu",
+        "Giulio Zhou",
+        "Ethan Perez",
+        "Mrinank Sharma"
+      ],
+      "venue": "ICLR 2026",
+      "links": [
+        {
+          "label": "Anthropic blog",
+          "url": "https://www.anthropic.com/research/next-generation-constitutional-classifiers"
+        },
+        {
+          "label": "tweet",
+          "url": "https://x.com/JerryWeiAI/status/2009741781425066092"
+        }
+      ],
+      "note": "* Equal contribution.",
+      "selected": {
+        "order": 1,
+        "link": {
+          "label": "blog",
+          "url": "https://www.anthropic.com/research/next-generation-constitutional-classifiers"
+        }
+      }
+    },
+    {
+      "id": "cost-effective-constitutional-classifiers-via-representation",
+      "year": 2025,
+      "title": "Cost-Effective Constitutional Classifiers via Representation Re-use",
+      "url": "https://alignment.anthropic.com/2025/cheap-monitors/",
+      "authors": [
+        "Hoagy Cunningham",
+        "Alwin Peng",
+        "Jerry Wei",
+        "Euan Ong",
+        "Fabien Roger",
+        "Linda Petrini",
+        "Misha Wagner",
+        "Vladimir Mikulik",
+        "Mrinank Sharma"
+      ],
+      "links": [
+        {
+          "label": "Anthropic blog",
+          "url": "https://alignment.anthropic.com/2025/cheap-monitors/"
+        }
+      ],
+      "blog_only": true
+    },
+    {
+      "id": "constitutional-classifiers-defending-against-universal-jailbreaks",
+      "year": 2025,
+      "title": "Constitutional classifiers: defending against universal jailbreaks across thousands of hours of red teaming",
+      "url": "https://arxiv.org/abs/2501.18837",
+      "authors": [
+        "Mrinank Sharma*",
+        "Meg Tong*",
+        "Jesse Mu*",
+        "Jerry Wei*",
+        "Jorrit Kruthoff*",
+        "Scott Goodfriend*",
+        "Euan Ong*",
+        "Alwin Peng",
+        "Raj Agarwal",
+        "Cem Anil",
+        "Amanda Askell",
+        "Nathan Bailey",
+        "Joe Benton",
+        "Emma Bluemke",
+        "Samuel R. Bowman",
+        "Eric Christiansen",
+        "Hoagy Cunningham",
+        "Andy Dau",
+        "Anjali Gopal",
+        "Rob Gilson",
+        "Logan Graham",
+        "Logan Howard",
+        "Nimit Kalra",
+        "Taesung Lee",
+        "Kevin Lin",
+        "Peter Lofgren",
+        "Francesco Mosconi",
+        "Clare O'Hara",
+        "Catherine Olsson",
+        "Linda Petrini",
+        "Samir Rajani",
+        "Nikhil Saxena",
+        "Alex Silverstein",
+        "Tanya Singh",
+        "Theodore Sumers",
+        "Leonard Tang",
+        "Kevin K. Troy",
+        "Constantin Weisser",
+        "Ruiqi Zhong",
+        "Giulio Zhou",
+        "Jan Leike",
+        "Jared Kaplan",
+        "Ethan Perez"
+      ],
+      "links": [
+        {
+          "label": "Anthropic blog",
+          "url": "https://www.anthropic.com/research/constitutional-classifiers"
+        },
+        {
+          "label": "tweet",
+          "url": "https://x.com/JerryWeiAI/status/1886453091811401874"
+        },
+        {
+          "label": "video",
+          "url": "https://www.youtube.com/watch?v=BaNXYqcfDyo"
+        }
+      ],
+      "note": "* Equal contribution.",
+      "selected": {
+        "order": 2,
+        "link": {
+          "label": "blog",
+          "url": "https://www.anthropic.com/research/constitutional-classifiers"
+        },
+        "title": "Constitutional classifiers: Defending against universal jailbreaks across thousands of hours of red teaming"
+      }
+    },
+    {
+      "id": "evaluating-feature-steering-a-case-study",
+      "year": 2024,
+      "title": "Evaluating feature steering: A case study in mitigating social biases",
+      "url": "https://www.anthropic.com/research/evaluating-feature-steering",
+      "authors": [
+        "Esin Durmus",
+        "Alex Tamkin",
+        "Jack Clark",
+        "Jerry Wei",
+        "Jonathan Marcus",
+        "Joshua Batson",
+        "Kunal Handa",
+        "Liane Lovitt",
+        "Meg Tong",
+        "Miles McCain",
+        "Oliver Rausch",
+        "Saffron Huang",
+        "Sam Bowman",
+        "Stuart Ritchie",
+        "Tom Henighan",
+        "Deep Ganguli"
+      ],
+      "links": [
+        {
+          "label": "Anthropic blog",
+          "url": "https://www.anthropic.com/research/evaluating-feature-steering"
+        },
+        {
+          "label": "tweet",
+          "url": "https://x.com/AnthropicAI/status/1849840131412296039"
+        }
+      ],
+      "blog_only": true
+    },
+    {
+      "id": "best-practices-and-lessons-learned-on",
+      "year": 2024,
+      "title": "Best Practices and Lessons Learned on Synthetic Data for Language Models",
+      "url": "https://arxiv.org/abs/2404.07503",
+      "authors": [
+        "Ruibo Liu",
+        "Jerry Wei",
+        "Fangyu Liu",
+        "Chenglei Si",
+        "Yanzhe Zhang",
+        "Jinmeng Rao",
+        "Steven Zheng",
+        "Daiyi Peng",
+        "Diyi Yang",
+        "Denny Zhou",
+        "Andrew M. Dai"
+      ],
+      "venue": "COLM 2024",
+      "links": [
+        {
+          "label": "tweet",
+          "url": "https://twitter.com/RuiboLiu/status/1778633696268141053"
+        }
+      ]
+    },
+    {
+      "id": "long-form-factuality-in-large-language",
+      "year": 2024,
+      "title": "Long-form factuality in large language models",
+      "url": "https://arxiv.org/abs/2403.18802",
+      "authors": [
+        "Jerry Wei*",
+        "Chengrun Yang*",
+        "Xinying Song*",
+        "Yifeng Lu*",
+        "Nathan Hu",
+        "Jie Huang",
+        "Dustin Tran",
+        "Daiyi Peng",
+        "Ruibo Liu",
+        "Da Huang",
+        "Cosmo Du",
+        "Quoc V. Le"
+      ],
+      "venue": "NeurIPS 2024",
+      "links": [
+        {
+          "label": "code",
+          "url": "https://github.com/google-deepmind/long-form-factuality"
+        },
+        {
+          "label": "slides",
+          "url": "https://drive.google.com/file/d/1F0CoN6kYNKyofy6MP8n_fjYCiBt4PDJC/view?usp=sharing"
+        },
+        {
+          "label": "tweet",
+          "url": "https://twitter.com/JerryWeiAI/status/1773402343301877960"
+        }
+      ],
+      "note": "* Lead contributor.",
+      "selected": {
+        "order": 3,
+        "link": {
+          "label": "code",
+          "url": "https://github.com/google-deepmind/long-form-factuality"
+        }
+      }
+    },
+    {
+      "id": "freshllms-refreshing-large-language-models-with",
+      "year": 2023,
+      "title": "FreshLLMs: Refreshing large language models with search engine augmentation",
+      "url": "https://arxiv.org/abs/2310.03214",
+      "authors": [
+        "Tu Vu",
+        "Mohit Iyyer",
+        "Xuezhi Wang",
+        "Noah Constant",
+        "Jerry Wei",
+        "Jason Wei",
+        "Chris Tar",
+        "Yun-Hsuan Sung",
+        "Denny Zhou",
+        "Quoc V. Le",
+        "Thang Luong"
+      ],
+      "venue": "Findings of ACL 2024",
+      "links": [
+        {
+          "label": "code",
+          "url": "https://github.com/freshllms/freshqa"
+        },
+        {
+          "label": "tweet",
+          "url": "https://twitter.com/JerryWeiAI/status/1710406316219564228"
+        }
+      ]
+    },
+    {
+      "id": "simple-synthetic-data-reduces-sycophancy-in",
+      "year": 2023,
+      "title": "Simple synthetic data reduces sycophancy in large language models",
+      "url": "https://arxiv.org/abs/2308.03958",
+      "authors": [
+        "Jerry Wei",
+        "Da Huang",
+        "Yifeng Lu",
+        "Denny Zhou",
+        "Quoc V. Le"
+      ],
+      "links": [
+        {
+          "label": "code",
+          "url": "https://github.com/google/sycophancy-intervention"
+        },
+        {
+          "label": "tweet",
+          "url": "https://twitter.com/JerryWeiAI/status/1689340237993185280"
+        }
+      ],
+      "selected": {
+        "order": 4,
+        "link": {
+          "label": "code",
+          "url": "https://github.com/google/sycophancy-intervention"
+        }
+      }
+    },
+    {
+      "id": "symbol-tuning-improves-in-context-learning",
+      "year": 2023,
+      "title": "Symbol tuning improves in-context learning in language models",
+      "url": "https://arxiv.org/abs/2305.08298",
+      "authors": [
+        "Jerry Wei",
+        "Le Hou",
+        "Andrew Lampinen",
+        "Xiangning Chen",
+        "Da Huang",
+        "Yi Tay",
+        "Xinyun Chen",
+        "Yifeng Lu",
+        "Denny Zhou",
+        "Tengyu Ma",
+        "Quoc V. Le"
+      ],
+      "venue": "EMNLP 2023",
+      "links": [
+        {
+          "label": "code",
+          "url": "https://github.com/JerryWeiAI/symbol-tuning"
+        },
+        {
+          "label": "Google AI blog",
+          "url": "https://ai.googleblog.com/2023/07/symbol-tuning-improves-in-context.html"
+        },
+        {
+          "label": "talk",
+          "url": "https://underline.io/events/431/posters/16518/poster/89055-symbol-tuning-improves-in-context-learning-in-language-models"
+        },
+        {
+          "label": "tweet",
+          "url": "https://twitter.com/JerryWeiAI/status/1658531449912393729"
+        }
+      ],
+      "selected": {
+        "order": 5,
+        "link": {
+          "label": "blog",
+          "url": "https://ai.googleblog.com/2023/07/symbol-tuning-improves-in-context.html"
+        }
+      }
+    },
+    {
+      "id": "larger-language-models-do-in-context",
+      "year": 2023,
+      "title": "Larger language models do in-context learning differently",
+      "url": "https://arxiv.org/abs/2303.03846",
+      "authors": [
+        "Jerry Wei",
+        "Jason Wei",
+        "Yi Tay",
+        "Dustin Tran",
+        "Albert Webson",
+        "Yifeng Lu",
+        "Xinyun Chen",
+        "Hanxiao Liu",
+        "Da Huang",
+        "Denny Zhou",
+        "Tengyu Ma"
+      ],
+      "links": [
+        {
+          "label": "Google AI blog",
+          "url": "https://ai.googleblog.com/2023/05/larger-language-models-do-in-context.html"
+        },
+        {
+          "label": "slides",
+          "url": "https://docs.google.com/presentation/d/1JvZExhi2KdYRDezD3YrQfs70HLPgQsj9CdK6K0gse40/edit?usp=sharing"
+        },
+        {
+          "label": "tweet",
+          "url": "https://twitter.com/JerryWeiAI/status/1633548780619571200"
+        }
+      ],
+      "selected": {
+        "order": 6,
+        "link": {
+          "label": "blog",
+          "url": "https://ai.googleblog.com/2023/05/larger-language-models-do-in-context.html"
+        }
+      }
+    },
+    {
+      "id": "calibrating-histopathology-image-classifiers-using-label",
+      "year": 2022,
+      "title": "Calibrating histopathology image classifiers using label smoothing",
+      "url": "https://arxiv.org/abs/2201.11866",
+      "authors": [
+        "Jerry Wei",
+        "Lorenzo Torresani",
+        "Jason Wei",
+        "Saeed Hassanpour"
+      ],
+      "venue": "AIME 2022"
+    },
+    {
+      "id": "a-petri-dish-for-histopathology-image",
+      "year": 2021,
+      "title": "A petri dish for histopathology image analysis",
+      "url": "https://arxiv.org/abs/2101.12355",
+      "authors": [
+        "Jerry Wei",
+        "Arief Suriawinata",
+        "Bing Ren",
+        "Xiaoying Liu",
+        "Mikhail Lisovsky",
+        "Louis Vaickus",
+        "Charles Brown",
+        "Michael Baker",
+        "Naofumi Tomita",
+        "Lorenzo Torresani",
+        "Jason Wei",
+        "Saeed Hassanpour"
+      ],
+      "venue": "AIME 2021",
+      "links": [
+        {
+          "label": "code",
+          "url": "https://bmirds.github.io/MHIST/"
+        }
+      ]
+    },
+    {
+      "id": "learn-like-a-pathologist-curriculum-learning",
+      "year": 2020,
+      "title": "Learn like a pathologist: curriculum learning by annotator agreement for histopathology image classification",
+      "url": "https://arxiv.org/abs/2009.13698",
+      "authors": [
+        "Jerry Wei",
+        "Arief Suriawinata",
+        "Bing Ren",
+        "Xiaoying Liu",
+        "Mikhail Lisovsky",
+        "Louis Vaickus",
+        "Charles Brown",
+        "Michael Baker",
+        "Mustafa Nasir-Moin",
+        "Naofumi Tomita",
+        "Lorenzo Torresani",
+        "Jason Wei",
+        "Saeed Hassanpour"
+      ],
+      "venue": "WACV 2021",
+      "links": [
+        {
+          "label": "talk",
+          "url": "https://papertalk.org/papertalks/27214"
+        },
+        {
+          "label": "blog",
+          "url": "https://towardsdatascience.com/applying-curriculum-learning-to-medical-images-184275c52350"
+        }
+      ]
+    },
+    {
+      "id": "difficulty-translation-in-histopathology-images",
+      "year": 2020,
+      "title": "Difficulty translation in histopathology images",
+      "url": "https://arxiv.org/abs/2004.12535",
+      "authors": [
+        "Jerry Wei",
+        "Arief Suriawinata",
+        "Xiaoying Liu",
+        "Bing Ren",
+        "Mustafa Nasir-Moin",
+        "Naofumi Tomita",
+        "Jason Wei",
+        "Saeed Hassanpour"
+      ],
+      "venue": "AIME 2020",
+      "links": [
+        {
+          "label": "code",
+          "url": "https://github.com/BMIRDS/DifficultyTranslation"
+        },
+        {
+          "label": "blog",
+          "url": "https://towardsdatascience.com/improving-classifier-performance-by-changing-the-difficulty-of-images-cae33464e8d3"
+        }
+      ]
+    },
+    {
+      "id": "what-are-people-asking-about-covid",
+      "year": 2020,
+      "title": "What are people asking about Covid-19? A question classification dataset",
+      "url": "https://arxiv.org/abs/2005.12522",
+      "authors": [
+        "Jerry Wei",
+        "Chengyu Huang",
+        "Soroush Vosoughi",
+        "Jason Wei"
+      ],
+      "venue": "NLP for COVID Workshop at ACL 2020",
+      "links": [
+        {
+          "label": "code",
+          "url": "https://github.com/JerryWeiAI/COVID-Q"
+        },
+        {
+          "label": "talk",
+          "url": "https://slideslive.com/38931809/w20-nlpcovid-live-stream?time=7819"
+        }
+      ]
+    },
+    {
+      "id": "newb-200-000-sentences-for-political",
+      "year": 2020,
+      "title": "NewB: 200,000+ sentences for political bias detection",
+      "url": "https://arxiv.org/abs/2006.03051",
+      "authors": [
+        "Jerry Wei"
+      ],
+      "venue": "Intel ISEF 2019",
+      "links": [
+        {
+          "label": "code",
+          "url": "https://github.com/JerryWeiAI/NewB"
+        }
+      ]
+    },
+    {
+      "id": "generative-image-translation-for-data-augmentation",
+      "year": 2019,
+      "title": "Generative image translation for data augmentation in colorectal histopathology images",
+      "url": "https://arxiv.org/abs/1910.05827",
+      "authors": [
+        "Jerry Wei",
+        "Arief Suriawinata",
+        "Louis Vaickus",
+        "Bing Ren",
+        "Xiaoying Liu",
+        "Jason Wei",
+        "Saeed Hassanpour"
+      ],
+      "venue": "ML4H Workshop at NeurIPS 2019",
+      "links": [
+        {
+          "label": "code",
+          "url": "https://github.com/BMIRDS/HistoGAN"
+        },
+        {
+          "label": "talk",
+          "url": "https://slideslive.com/38923239?time=1095"
+        }
+      ]
+    },
+    {
+      "id": "automated-detection-of-celiac-disease-on",
+      "year": 2019,
+      "title": "Automated detection of celiac disease on duodenal biopsy slides: A deep learning approach",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2153353922003704",
+      "authors": [
+        "Jason Wei",
+        "Jerry Wei",
+        "Christopher Jackson",
+        "Bing Ren",
+        "Arief Suriawinata",
+        "Saeed Hassanpour"
+      ],
+      "venue": "Journal of Pathology Informatics"
+    }
+  ]
+}

@@ -165,12 +165,13 @@ ul.pubs .note { color: var(--muted); font-size: 0.9rem; margin-top: 2px; }
 .reveal.in { opacity: 1; transform: none; transition: opacity 0.2s ease-out, transform 0.2s ease-out; }
 
 /* Timeline footer and 404 */
-.updated { font-family: "Caveat", cursive; font-size: 1.4rem; color: var(--muted); margin-top: 36px; }
+.updated { font-family: "Caveat", cursive; font-size: 1.4rem; color: var(--muted); margin: 88px 0 0; }
+main.home .updated { padding: 0 clamp(0px, 9%, 110px); }
 main.notfound { padding-top: 72px; }
 
 /* Print: papers as a plain list, no chrome */
 @media print {
-  header.site, .socials, .back-top, .center, .footnote { display: none !important; }
+  header.site, .socials, .back-top, .center, .footnote, .updated { display: none !important; }
   body { background: #fff; color: #000; font-size: 11pt; }
   a { color: #000 !important; text-decoration: none !important; background: none !important; }
   a.bracket, ul.pubs .venue { color: #000 !important; }

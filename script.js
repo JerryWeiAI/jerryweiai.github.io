@@ -20,14 +20,15 @@
   }
 
   // "Last updated" on the timeline: use the latest commit month if the GitHub API answers.
-  var lu = document.getElementById('last-updated');
-  if (lu && window.fetch) {
+  var lus = document.querySelectorAll('.last-updated');
+  if (lus.length && window.fetch) {
     fetch('https://api.github.com/repos/JerryWeiAI/jerryweiai.github.io/commits?per_page=1')
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (j) {
         if (!j || !j[0]) return;
         var d = new Date(j[0].commit.committer.date);
-        lu.textContent = d.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+        var s = d.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+        lus.forEach(function (el) { el.textContent = s; });
       }).catch(function () {});
   }
 })();

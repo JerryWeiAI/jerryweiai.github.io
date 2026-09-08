@@ -51,9 +51,8 @@
     if (months < 1) return;
     var y = Math.floor(months / 12), m = months % 12, parts = [];
     if (y) parts.push(y + (y === 1 ? ' yr' : ' yrs')); if (m) parts.push(m + ' mo');
-    var role = el.previousElementSibling; while (role && !role.classList.contains('role')) role = role.previousElementSibling;
-    if (!role) return;
-    var span = document.createElement('span'); span.className = 'dur'; span.textContent = '(' + parts.join(' ') + ')'; role.appendChild(span);
+    if (el.closest('.sub')) return; // top-level entries only
+    var span = document.createElement('span'); span.className = 'dur'; span.textContent = '(' + parts.join(' ') + ')'; el.appendChild(span);
   });
 
   // Reading progress hairline on the papers page.

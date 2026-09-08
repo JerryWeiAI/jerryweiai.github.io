@@ -122,9 +122,11 @@ ul.prs { list-style: square; padding-left: 22px; margin: 0 0 16px; }
 ul.prs li { padding: 3px 0; }
 
 dl.contact { margin: 0; }
-dl.contact div { display: flex; gap: 12px; padding: 4px 0; }
-dl.contact dt { flex: 0 0 150px; font-weight: 700; margin: 0; }
-dl.contact dd { margin: 0; }
+dl.contact div { padding: 9px 0; }
+dl.contact dt, dl.contact dd { display: inline; margin: 0; }
+dl.contact dt { font-weight: 700; }
+dl.contact dt::after { content: ": "; white-space: pre; }
+dl.contact dd a { text-decoration: underline; }
 
 figure { margin: 20px 0; }
 figure img { border-radius: 10px; display: block; }

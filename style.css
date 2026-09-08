@@ -57,8 +57,8 @@ a {
 }
 a:hover { color: var(--accent-hover); background-size: 100% 1px; }
 /* Standing underline: the line thickens on hover, same color. */
-a.ul, ul.pubs .ptitle a, dl.contact dd a, ul.talks .what a { background-size: 100% 1px; }
-a.ul:hover, ul.pubs .ptitle a:hover, dl.contact dd a:hover, ul.talks .what a:hover { background-size: 100% 2px; }
+a.ul, ul.pubs .ptitle a, dl.contact dd a { background-size: 100% 1px; }
+a.ul:hover, ul.pubs .ptitle a:hover, dl.contact dd a:hover { background-size: 100% 2px; }
 .socials a, .logo, a.button, a.chip { background-image: none; }
 /* Inline pill buttons for blog / code / tweet links, same size as the text around them */
 a.chip {

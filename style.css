@@ -77,9 +77,8 @@ main.home .intro, main.home .block { padding: 0 clamp(0px, 9%, 110px); }
 .socials a:hover img { opacity: 0.75; }
 .socials .label { margin-top: 14px; font-weight: 700; }
 hr.rule { border: 0; border-top: 2px solid #3d3d3a; margin: 40px 0 36px; }
-a.lilac, a.ptitle { color: var(--lilac); }
-a.lilac:hover, a.ptitle:hover { color: var(--lilac); }
-h2 a.lilac { text-decoration: underline; }
+a.ptitle { color: var(--lilac); }
+a.ptitle:hover { color: var(--lilac); }
 ul.selected { list-style: none; padding: 0; margin: 0; }
 ul.selected li { padding: 7px 0; }
 ul.talks { list-style: none; padding: 0; margin: 0; }

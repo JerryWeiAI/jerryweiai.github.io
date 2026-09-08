@@ -1,7 +1,8 @@
+/* Caveat, SIL Open Font License, https://fonts.google.com/specimen/Caveat */
 @font-face {
-  font-family: "Wei New Roman";
-  src: url("fonts/WeiNewRoman-Regular.otf") format("opentype");
-  font-weight: 400;
+  font-family: "Caveat";
+  src: url("fonts/Caveat-latin.woff2") format("woff2");
+  font-weight: 400 700;
   font-style: normal;
   font-display: swap;
 }
@@ -16,17 +17,6 @@
   --accent-hover: #164a99;
   --card: #f0eee6;      /* ivory medium */
   --max: 720px;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #141413;      /* slate dark */
-    --fg: #faf9f5;      /* ivory light */
-    --muted: #b0aea5;   /* cloud medium */
-    --rule: #3d3d3a;    /* slate medium */
-    --accent: #7fb0ff;
-    --accent-hover: #a9c9ff;
-    --card: #1f1f1d;
-  }
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
@@ -52,7 +42,6 @@ header.site .wrap {
   flex-wrap: wrap; gap: 12px 24px; padding-top: 18px; padding-bottom: 18px;
 }
 .logo img { height: 34px; width: auto; display: block; }
-@media (prefers-color-scheme: dark) { .logo img { filter: invert(1); } }
 nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 22px; flex-wrap: wrap; }
 nav a { color: var(--fg); font-weight: 500; }
 nav a[aria-current="page"] { color: var(--accent); }
@@ -71,7 +60,7 @@ p { margin: 0 0 16px; }
   width: 190px; height: 190px; object-fit: cover; border-radius: 12px; flex: none;
 }
 .intro .text { flex: 1 1 320px; }
-.intro h1 { font-family: "Wei New Roman", cursive; font-weight: 400; font-size: 2.6rem; margin-top: 4px; }
+.intro h1 { font-family: "Caveat", cursive; font-weight: 600; font-size: 3rem; margin: 0 0 14px; line-height: 1.1; }
 
 .links { list-style: none; padding: 0; margin: 12px 0 0; display: flex; flex-wrap: wrap; gap: 8px 18px; }
 .links li a { font-weight: 500; }

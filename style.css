@@ -193,11 +193,11 @@ main.notfound { padding-top: 72px; }
 }
 
 /* Year jump row on the papers page */
-.jump { font-size: var(--fs-small); color: var(--muted); margin: -4px 0 18px; }
+.jump { font-size: 0.8rem; color: var(--muted); margin: -4px 0 18px; }
 .jump .sep { margin: 0 2px; }
 
 /* Timeline durations, computed by script.js */
-ul.tl .dur { color: var(--muted); font-size: var(--fs-small); }
+ul.tl .dur { color: var(--muted); font-size: var(--fs-small); font-weight: 400; margin-left: 6px; }
 
 /* Copied confirmation */
 .copy-email { position: relative; }
@@ -209,19 +209,5 @@ ul.tl .dur { color: var(--muted); font-size: var(--fs-small); }
 .copy-email.copied .toast { opacity: 1; transform: translateX(-50%) translateY(0); }
 
 /* Reading progress hairline, papers page only */
-.progress { position: fixed; top: 0; left: 0; height: 1px; width: 0; background: var(--accent); z-index: 20; }
+.progress { position: fixed; top: 0; left: 0; height: 3px; width: 0; background: var(--accent); z-index: 20; }
 
-/* Cursor-following accent inside the header */
-.cursor-dot {
-  position: absolute; width: 10px; height: 10px; border-radius: 50%; background: var(--lilac); opacity: 0;
-  pointer-events: none; transform: translate(-50%, -50%); transition: opacity 0.25s ease, left 0.35s ease-out, top 0.35s ease-out;
-}
-header.site:hover .cursor-dot { opacity: 0.45; }
-@media (hover: none), (prefers-reduced-motion: reduce) { .cursor-dot { display: none; } }
-
-/* Skip link: hidden until focused with the keyboard */
-.skip-link {
-  position: absolute; left: 12px; top: -40px; z-index: 30; padding: 4px 8px; font-size: var(--fs-small);
-  background: var(--fg); color: var(--bg); border-radius: 4px; background-image: none;
-}
-.skip-link:focus { top: 8px; }

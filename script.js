@@ -21,7 +21,7 @@
 
   // Copy email address instead of opening a mail app; show a brief confirmation.
   document.querySelectorAll('.copy-email').forEach(function (a) {
-    var toast = document.createElement('span'); toast.className = 'toast'; toast.textContent = 'Copied'; a.appendChild(toast);
+    var toast = document.createElement('span'); toast.className = 'toast'; toast.textContent = 'Copied!'; a.appendChild(toast);
     a.addEventListener('click', function (e) {
       if (!navigator.clipboard) return; // fall back to the mailto link
       e.preventDefault();
@@ -51,7 +51,9 @@
     if (months < 1) return;
     var y = Math.floor(months / 12), m = months % 12, parts = [];
     if (y) parts.push(y + (y === 1 ? ' yr' : ' yrs')); if (m) parts.push(m + ' mo');
-    var span = document.createElement('span'); span.className = 'dur'; span.textContent = ' \u00b7 ' + parts.join(' '); el.appendChild(span);
+    var role = el.previousElementSibling; while (role && !role.classList.contains('role')) role = role.previousElementSibling;
+    if (!role) return;
+    var span = document.createElement('span'); span.className = 'dur'; span.textContent = '(' + parts.join(' ') + ')'; role.appendChild(span);
   });
 
   // Reading progress hairline on the papers page.
@@ -62,14 +64,6 @@
       bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
     }
     prog(); window.addEventListener('scroll', prog, { passive: true }); window.addEventListener('resize', prog);
-  }
-
-  // Cursor-following accent inside the header.
-  if (!reduce && window.matchMedia('(hover: hover)').matches) {
-    var dot = document.createElement('div'); dot.className = 'cursor-dot'; header.style.position = 'sticky'; header.appendChild(dot);
-    header.addEventListener('mousemove', function (e) {
-      var r = header.getBoundingClientRect(); dot.style.left = (e.clientX - r.left) + 'px'; dot.style.top = (e.clientY - r.top) + 'px';
-    });
   }
 
   // "Last updated" on the timeline: use the latest commit month if the GitHub API answers.

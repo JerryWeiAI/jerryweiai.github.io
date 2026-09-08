@@ -44,10 +44,10 @@
   --muted: #b0aea5;     /* cloud medium */
   --rule: #3d3d3a;      /* slate medium */
   --card: #1f1f1d;
-  --accent: #0072bb;        /* same as light for now */
+  --accent: #0072bb;        /* French blue, same as light */
   --accent-hover: #005a94;
-  --lilac: #86608e;         /* same as light for now */
-  --hl: rgba(231, 172, 207, 0.5);   /* same as light for now */
+  --lilac: #86608e;         /* French lilac, same as light */
+  --hl: rgba(252, 142, 172, 0.45);  /* flamingo pink */
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }

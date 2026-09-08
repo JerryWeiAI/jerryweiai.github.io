@@ -155,9 +155,10 @@ figcaption { font-size: var(--fs-small); color: var(--muted); margin-top: 8px; }
 .back-top { margin-top: 88px; }
 a.button { display: inline-block; padding: 8px 18px; border: 1.5px solid #3d3d3a; border-radius: 4px; color: #3d3d3a; }
 a.button:hover { text-decoration: none; background: var(--card); }
-h2.year { text-decoration: underline; text-underline-offset: 6px; margin: 40px 0 10px; }
+h2.year { text-decoration: underline; text-underline-offset: 6px; margin: 40px 0 10px; scroll-margin-top: 84px; }
 ul.pubs { list-style: none; padding: 0; margin: 0; line-height: 1.6; }
-ul.pubs li { padding: 10px 0 14px; }
+ul.pubs li { padding: 10px 6px 14px; margin: 0 -6px; border-radius: 6px; scroll-margin-top: 84px; transition: background-color 0.6s ease; }
+ul.pubs li.flash { background-color: rgba(231, 172, 207, 0.35); transition: none; }
 ul.pubs .ptitle { font-size: var(--fs-lead); line-height: 1.4; margin-bottom: 4px; }
 ul.pubs .caret { margin-left: 0; color: var(--accent); }
 ul.pubs .me { font-weight: 700; background: rgba(231, 172, 207, 0.5); border-radius: 3px; padding: 0 3px; }
@@ -190,3 +191,37 @@ main.notfound { padding-top: 72px; }
   .reveal { opacity: 1; transform: none; }
   main { padding: 0; }
 }
+
+/* Year jump row on the papers page */
+.jump { font-size: var(--fs-small); color: var(--muted); margin: -4px 0 18px; }
+.jump .sep { margin: 0 2px; }
+
+/* Timeline durations, computed by script.js */
+ul.tl .dur { color: var(--muted); font-size: var(--fs-small); }
+
+/* Copied confirmation */
+.copy-email { position: relative; }
+.copy-email .toast {
+  position: absolute; left: 50%; bottom: calc(100% + 8px); transform: translateX(-50%) translateY(4px);
+  background: var(--fg); color: var(--bg); font-size: var(--fs-small); line-height: 1; padding: 6px 9px; border-radius: 5px;
+  white-space: nowrap; pointer-events: none; opacity: 0; transition: opacity 0.15s ease, transform 0.15s ease;
+}
+.copy-email.copied .toast { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* Reading progress hairline, papers page only */
+.progress { position: fixed; top: 0; left: 0; height: 1px; width: 0; background: var(--accent); z-index: 20; }
+
+/* Cursor-following accent inside the header */
+.cursor-dot {
+  position: absolute; width: 10px; height: 10px; border-radius: 50%; background: var(--lilac); opacity: 0;
+  pointer-events: none; transform: translate(-50%, -50%); transition: opacity 0.25s ease, left 0.35s ease-out, top 0.35s ease-out;
+}
+header.site:hover .cursor-dot { opacity: 0.45; }
+@media (hover: none), (prefers-reduced-motion: reduce) { .cursor-dot { display: none; } }
+
+/* Skip link: hidden until focused with the keyboard */
+.skip-link {
+  position: absolute; left: 12px; top: -40px; z-index: 30; padding: 4px 8px; font-size: var(--fs-small);
+  background: var(--fg); color: var(--bg); border-radius: 4px; background-image: none;
+}
+.skip-link:focus { top: 8px; }

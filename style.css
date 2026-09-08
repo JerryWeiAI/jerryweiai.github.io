@@ -26,7 +26,7 @@
   --accent-hover: #005a94;  /* darker French blue on hover */
   --lilac: #86608e;         /* French lilac: highlights */
   --card: #f0eee6;      /* ivory medium */
-  --max: 860px;         /* content width, every page */
+  --max: 780px;         /* content width, every page */
   /* Type scale, every page */
   --fs-body: 16px;
   --fs-small: 0.9rem;   /* dates, notes, footnotes */
@@ -101,9 +101,9 @@ p { margin: 0 0 16px; }
 /* Home page */
 main.home .block { margin-top: 72px; }
 main.home .block h2 { margin-top: 0; }
-.intro { display: flex; gap: 48px; align-items: center; flex-wrap: wrap; }
-.intro .text { flex: 1 1 360px; }
-.intro img.headshot { width: 340px; max-width: 100%; aspect-ratio: 690 / 738; object-fit: cover; flex: none; border-radius: 12px; }
+.intro { display: flex; gap: 40px; align-items: center; flex-wrap: wrap; }
+.intro .text { flex: 1 1 340px; }
+.intro img.headshot { width: 300px; max-width: 100%; aspect-ratio: 690 / 738; object-fit: cover; flex: none; border-radius: 12px; }
 .intro h1 { margin: 20px 0 32px; }
 .socials { text-align: center; margin: 36px 0 20px; }
 .socials ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 22px; }

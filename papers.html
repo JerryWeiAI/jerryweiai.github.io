@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Papers · Jerry Wei</title>
 <meta name="description" content="Publications by Jerry Wei.">
-<link rel="stylesheet" href="style.css?v=17">
+<link rel="stylesheet" href="style.css?v=18">
 <link rel="icon" href="images/headshot.png">
 </head>
 <body>
@@ -15,66 +15,147 @@
     <nav aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="papers.html" aria-current="page">Papers</a></li><li><a href="contact.html">Contact</a></li><li><a href="timeline.html">Timeline</a></li><li><a href="other.html">Other</a></li></ul></nav>
   </div>
 </header>
-<main><div class="wrap">
+<main class="papers"><div class="wrap">
+<h1>Papers.</h1>
+<p>My recent research has been focused on developing robust safety systems for large-language models (LLMs) in order to prevent catastrophic misuse of AI.</p>
+<p>In the past, I've investigated the mechanisms that LLMs use to perform in-context learning, how to improve their capabilities, and in what ways we can better align them with our values. I've also worked on improving medical-image classification algorithms by incorporating popular computer-vision methods into the medical-image setting.</p>
+<p class="footnote"><u>^Blog-post only.</u></p>
+<p class="center"><a class="button" href="https://scholar.google.com/citations?hl=en&amp;user=Y4sk3aMAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">View on Google Scholar</a></p>
 
-<h1>Papers</h1>
-<p>My recent work focuses on developing robust safety systems for large language models (LLMs) in order to prevent catastrophic misuse of AI. Before that, I worked on the mechanisms behind in-context learning, capability improvements, value alignment, and medical-image classification using computer-vision methods.</p>
-<p><a href="https://scholar.google.com/citations?hl=en&amp;user=Y4sk3aMAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">View on Google Scholar</a></p>
-
-<h2>2026</h2>
-<ol class="papers">
-<li><span class="title">Jailbroken Frontier Models Retain Their Capabilities</span><span class="authors">Daniel Zhu, Zihan Wang, Jenny Bao, Jerry Wei</span><span class="plinks"><a href="https://arxiv.org/abs/2605.00267">arXiv</a></span></li>
-<li><span class="title">Poisoning Fine-tuning Datasets of Constitutional Classifiers</span><span class="authors">Chase Bowers, Faizan Ali, John Hughes, Jerry Wei, Fabien Roger</span><span class="plinks"><a href="https://alignment.anthropic.com/2026/backdooring-classifiers/">Anthropic blog</a></span></li>
-<li><span class="title">Segment-Level Coherence for Robust Harmful Intent Probing in LLMs</span><span class="authors">Xuanli He, Bilgehan Sel, Faizan Ali, Jenny Bao, Hoagy Cunningham, Jerry Wei</span><span class="plinks"><a href="https://arxiv.org/abs/2604.14865">arXiv</a></span></li>
-<li><span class="title">Trojan-Speak: Bypassing Constitutional Classifiers with No Jailbreak Tax via Adversarial Finetuning</span><span class="authors">Bilgehan Sel, Xuanli He, Alwin Peng, Ming Jin, Jerry Wei</span><span class="venue">ICML 2026</span><span class="plinks"><a href="https://arxiv.org/abs/2603.29038">arXiv</a></span></li>
-<li><span class="title">Constitutional Classifiers++: Efficient Production-Grade Defenses against Universal Jailbreaks</span><span class="authors">Hoagy Cunningham*, Jerry Wei*, Zihan Wang, Andrew Persic, Alwin Peng, Jordan Abderrachid, Raj Agarwal, Bobby Chen, Austin Cohen, Andy Dau, Alek Dimitriev, Rob Gilson, Logan Howard, Yijin Hua, Jared Kaplan, Jan Leike, Mu Lin, Christopher Liu, Vladimir Mikulik, Rohit Mittapalli, Clare O'Hara, Jin Pan, Nikhil Saxena, Alex Silverstein, Yue Song, Xunjie Yu, Giulio Zhou, Ethan Perez, Mrinank Sharma</span><span class="venue">ICLR 2026</span><span class="plinks"><a href="https://arxiv.org/abs/2601.04603">arXiv</a><a href="https://www.anthropic.com/research/next-generation-constitutional-classifiers">Anthropic blog</a><a href="https://x.com/JerryWeiAI/status/2009741781425066092">tweet</a></span><div class="note">*Equal contribution.</div></li>
-</ol>
-
-<h2>2025</h2>
-<ol class="papers">
-<li><span class="title">Cost-Effective Constitutional Classifiers via Representation Re-use</span><span class="authors">Hoagy Cunningham, Alwin Peng, Jerry Wei, Euan Ong, Fabien Roger, Linda Petrini, Misha Wagner, Vladimir Mikulik, Mrinank Sharma</span><span class="plinks"><a href="https://alignment.anthropic.com/2025/cheap-monitors/">Anthropic blog</a></span></li>
-<li><span class="title">Constitutional classifiers: Defending against universal jailbreaks across thousands of hours of red teaming</span><span class="authors">Mrinank Sharma*, Meg Tong*, Jesse Mu*, Jerry Wei*, Jorrit Kruthoff*, Scott Goodfriend*, Euan Ong*, Alwin Peng, Raj Agarwal, Cem Anil, Amanda Askell, Nathan Bailey, Joe Benton, Emma Bluemke, Samuel R. Bowman, Eric Christiansen, Hoagy Cunningham, Andy Dau, Anjali Gopal, Rob Gilson, Logan Graham, Logan Howard, Nimit Kalra, Taesung Lee, Kevin Lin, Peter Lofgren, Francesco Mosconi, Clare O'Hara, Catherine Olsson, Linda Petrini, Samir Rajani, Nikhil Saxena, Alex Silverstein, Tanya Singh, Theodore Sumers, Leonard Tang, Kevin K. Troy, Constantin Weisser, Ruiqi Zhong, Giulio Zhou, Jan Leike, Jared Kaplan, Ethan Perez</span><span class="plinks"><a href="https://arxiv.org/abs/2501.18837">arXiv</a><a href="https://www.anthropic.com/research/constitutional-classifiers">Anthropic blog</a><a href="https://x.com/JerryWeiAI/status/1886453091811401874">tweet</a><a href="https://www.youtube.com/watch?v=BaNXYqcfDyo">video</a></span><div class="note">*Equal contribution.</div></li>
-</ol>
-
-<h2>2024</h2>
-<ol class="papers">
-<li><span class="title">Evaluating feature steering: A case study in mitigating social biases</span><span class="authors">Esin Durmus, Alex Tamkin, Jack Clark, Jerry Wei, Jonathan Marcus, Joshua Batson, Kunal Handa, Liane Lovitt, Meg Tong, Miles McCain, Oliver Rausch, Saffron Huang, Sam Bowman, Stuart Ritchie, Tom Henighan, Deep Ganguli</span><span class="plinks"><a href="https://www.anthropic.com/research/evaluating-feature-steering">Anthropic blog</a><a href="https://x.com/AnthropicAI/status/1849840131412296039">tweet</a></span></li>
-<li><span class="title">Best Practices and Lessons Learned on Synthetic Data for Language Models</span><span class="authors">Ruibo Liu, Jerry Wei, Fangyu Liu, Chenglei Si, Yanzhe Zhang, Jinmeng Rao, Steven Zheng, Daiyi Peng, Diyi Yang, Denny Zhou, Andrew M. Dai</span><span class="venue">COLM 2024</span><span class="plinks"><a href="https://arxiv.org/abs/2404.07503">arXiv</a><a href="https://twitter.com/RuiboLiu/status/1778633696268141053">tweet</a></span></li>
-<li><span class="title">Long-form factuality in large language models</span><span class="authors">Jerry Wei*, Chengrun Yang*, Xinying Song*, Yifeng Lu*, Nathan Hu, Jie Huang, Dustin Tran, Daiyi Peng, Ruibo Liu, Da Huang, Cosmo Du, Quoc V. Le</span><span class="venue">NeurIPS 2024</span><span class="plinks"><a href="https://arxiv.org/abs/2403.18802">arXiv</a><a href="https://github.com/google-deepmind/long-form-factuality">code</a><a href="https://drive.google.com/file/d/1F0CoN6kYNKyofy6MP8n_fjYCiBt4PDJC/view?usp=sharing">slides</a><a href="https://twitter.com/JerryWeiAI/status/1773402343301877960">tweet</a></span><div class="note">*Lead contributor.</div></li>
-</ol>
-
-<h2>2023</h2>
-<ol class="papers">
-<li><span class="title">FreshLLMs: Refreshing large language models with search engine augmentation</span><span class="authors">Tu Vu, Mohit Iyyer, Xuezhi Wang, Noah Constant, Jerry Wei, Jason Wei, Chris Tar, Yun-Hsuan Sung, Denny Zhou, Quoc V. Le, Thang Luong</span><span class="venue">Findings of ACL 2024</span><span class="plinks"><a href="https://arxiv.org/abs/2310.03214">arXiv</a><a href="https://github.com/freshllms/freshqa">code</a><a href="https://twitter.com/JerryWeiAI/status/1710406316219564228">tweet</a></span></li>
-<li><span class="title">Simple synthetic data reduces sycophancy in large language models</span><span class="authors">Jerry Wei, Da Huang, Yifeng Lu, Denny Zhou, Quoc V. Le</span><span class="plinks"><a href="https://arxiv.org/abs/2308.03958">arXiv</a><a href="https://github.com/google/sycophancy-intervention">code</a><a href="https://twitter.com/JerryWeiAI/status/1689340237993185280">tweet</a></span></li>
-<li><span class="title">Symbol tuning improves in-context learning in language models</span><span class="authors">Jerry Wei, Le Hou, Andrew Lampinen, Xiangning Chen, Da Huang, Yi Tay, Xinyun Chen, Yifeng Lu, Denny Zhou, Tengyu Ma, Quoc V. Le</span><span class="venue">EMNLP 2023</span><span class="plinks"><a href="https://arxiv.org/abs/2305.08298">arXiv</a><a href="https://github.com/JerryWeiAI/symbol-tuning">code</a><a href="https://ai.googleblog.com/2023/07/symbol-tuning-improves-in-context.html">Google AI blog</a><a href="https://underline.io/events/431/posters/16518/poster/89055-symbol-tuning-improves-in-context-learning-in-language-models">talk</a><a href="https://twitter.com/JerryWeiAI/status/1658531449912393729">tweet</a></span></li>
-<li><span class="title">Larger language models do in-context learning differently</span><span class="authors">Jerry Wei, Jason Wei, Yi Tay, Dustin Tran, Albert Webson, Yifeng Lu, Xinyun Chen, Hanxiao Liu, Da Huang, Denny Zhou, Tengyu Ma</span><span class="plinks"><a href="https://arxiv.org/abs/2303.03846">arXiv</a><a href="https://ai.googleblog.com/2023/05/larger-language-models-do-in-context.html">Google AI blog</a><a href="https://docs.google.com/presentation/d/1JvZExhi2KdYRDezD3YrQfs70HLPgQsj9CdK6K0gse40/edit?usp=sharing">slides</a><a href="https://twitter.com/JerryWeiAI/status/1633548780619571200">tweet</a></span></li>
-</ol>
-
-<h2>2022</h2>
-<ol class="papers">
-<li><span class="title">Calibrating histopathology image classifiers using label smoothing</span><span class="authors">Jerry Wei, Lorenzo Torresani, Jason Wei, Saeed Hassanpour</span><span class="venue">AIME 2022</span><span class="plinks"><a href="https://arxiv.org/abs/2201.11866">arXiv</a></span></li>
-</ol>
-
-<h2>2021</h2>
-<ol class="papers">
-<li><span class="title">A petri dish for histopathology image analysis</span><span class="authors">Jerry Wei, Arief Suriawinata, Bing Ren, Xiaoying Liu, Mikhail Lisovsky, Louis Vaickus, Charles Brown, Michael Baker, Naofumi Tomita, Lorenzo Torresani, Jason Wei, Saeed Hassanpour</span><span class="venue">AIME 2021</span><span class="plinks"><a href="https://arxiv.org/abs/2101.12355">arXiv</a><a href="https://bmirds.github.io/MHIST/">code</a></span></li>
-</ol>
-
-<h2>2020</h2>
-<ol class="papers">
-<li><span class="title">Learn like a pathologist: Curriculum learning by annotator agreement for histopathology image classification</span><span class="authors">Jerry Wei, Arief Suriawinata, Bing Ren, Xiaoying Liu, Mikhail Lisovsky, Louis Vaickus, Charles Brown, Michael Baker, Mustafa Nasir-Moin, Naofumi Tomita, Lorenzo Torresani, Jason Wei, Saeed Hassanpour</span><span class="venue">WACV 2021</span><span class="plinks"><a href="https://arxiv.org/abs/2009.13698">arXiv</a><a href="https://papertalk.org/papertalks/27214">talk</a><a href="https://towardsdatascience.com/applying-curriculum-learning-to-medical-images-184275c52350">blog</a></span></li>
-<li><span class="title">Difficulty translation in histopathology images</span><span class="authors">Jerry Wei, Arief Suriawinata, Xiaoying Liu, Bing Ren, Mustafa Nasir-Moin, Naofumi Tomita, Jason Wei, Saeed Hassanpour</span><span class="venue">AIME 2020</span><span class="plinks"><a href="https://arxiv.org/abs/2004.12535">arXiv</a><a href="https://github.com/BMIRDS/DifficultyTranslation">code</a><a href="https://towardsdatascience.com/improving-classifier-performance-by-changing-the-difficulty-of-images-cae33464e8d3">blog</a></span></li>
-<li><span class="title">What are people asking about COVID-19? A question classification dataset</span><span class="authors">Jerry Wei, Chengyu Huang, Soroush Vosoughi, Jason Wei</span><span class="venue">NLP for COVID Workshop at ACL 2020</span><span class="plinks"><a href="https://arxiv.org/abs/2005.12522">arXiv</a><a href="https://github.com/JerryWeiAI/COVID-Q">code</a><a href="https://slideslive.com/38931809/w20-nlpcovid-live-stream?time=7819">talk</a></span></li>
-<li><span class="title">NewB: 200,000+ sentences for political bias detection</span><span class="authors">Jerry Wei</span><span class="venue">Intel ISEF 2019</span><span class="plinks"><a href="https://arxiv.org/abs/2006.03051">arXiv</a><a href="https://github.com/JerryWeiAI/NewB">code</a></span></li>
-</ol>
-
-<h2>2019</h2>
-<ol class="papers">
-<li><span class="title">Generative image translation for data augmentation in colorectal histopathology images</span><span class="authors">Jerry Wei, Arief Suriawinata, Louis Vaickus, Bing Ren, Xiaoying Liu, Jason Wei, Saeed Hassanpour</span><span class="venue">ML4H Workshop at NeurIPS 2019</span><span class="plinks"><a href="https://arxiv.org/abs/1910.05827">arXiv</a><a href="https://github.com/BMIRDS/HistoGAN">code</a><a href="https://slideslive.com/38923239?time=1095">talk</a></span></li>
-<li><span class="title">Automated detection of celiac disease on duodenal biopsy slides: A deep learning approach</span><span class="authors">Jason Wei, Jerry Wei, Christopher Jackson, Bing Ren, Arief Suriawinata, Saeed Hassanpour</span><span class="venue">Journal of Pathology Informatics</span><span class="plinks"><a href="https://www.sciencedirect.com/science/article/pii/S2153353922003704">paper</a></span></li>
-</ol>
-
+<h2 class="year">2026</h2>
+<ul class="pubs">
+  <li>
+    <div class="ptitle"><a href="https://arxiv.org/abs/2605.00267">Jailbroken Frontier Models Retain Their Capabilities.</a></div>
+    <div class="authors">Daniel Zhu, Zihan Wang, Jenny Bao, <b class="me">Jerry Wei</b>.</div>
+    
+  </li>
+  <li>
+    <div class="ptitle"><a href="https://alignment.anthropic.com/2026/backdooring-classifiers/">Poisoning Fine-tuning Datasets of Constitutional Classifiers.</a><span class="caret">^</span></div>
+    <div class="authors">Chase Bowers, Faizan Ali, John Hughes, <b class="me">Jerry Wei</b>, Fabien Roger.</div>
+    <div class="meta"><a class="bracket" href="https://alignment.anthropic.com/2026/backdooring-classifiers/">Anthropic blog</a></div>
+  </li>
+  <li>
+    <div class="ptitle"><a href="https://arxiv.org/abs/2604.14865">Segment-Level Coherence for Robust Harmful Intent Probing in LLMs.</a></div>
+    <div class="authors">Xuanli He, Bilgehan Sel, Faizan Ali, Jenny Bao, Hoagy Cunningham, <b class="me">Jerry Wei</b>.</div>
+    
+  </li>
+  <li>
+    <div class="ptitle"><a href="https://arxiv.org/abs/2603.29038">Trojan-Speak: Bypassing Constitutional Classifiers with No Jailbreak Tax via Adversarial Finetuning.</a></div>
+    <div class="authors">Bilgehan Sel, Xuanli He, Alwin Peng, Ming Jin, <b class="me">Jerry Wei</b>.</div>
+    <div class="meta"><span class="venue">ICML 2026.</span> </div>
+  </li>
+  <li>
+    <div class="ptitle"><a href="https://arxiv.org/abs/2601.04603">Constitutional Classifiers++: Efficient Production-Grade Defenses against Universal Jailbreaks.</a></div>
+    <div class="authors">Hoagy Cunningham*, <b class="me">Jerry Wei*</b>, Zihan Wang, Andrew Persic, Alwin Peng, Jordan Abderrachid, Raj Agarwal, Bobby Chen, Austin Cohen, Andy Dau, Alek Dimitriev, Rob Gilson, Logan Howard, Yijin Hua, Jared Kaplan, Jan Leike, Mu Lin, Christopher Liu, Vladimir Mikulik, Rohit Mittapalli, Clare O'Hara, Jin Pan, Nikhil Saxena, Alex Silverstein, Yue Song, Xunjie Yu, Giulio Zhou, Ethan Perez, Mrinank Sharma.</div>
+    <div class="meta"><span class="venue">ICLR 2026.</span> <a class="bracket" href="https://www.anthropic.com/research/next-generation-constitutional-classifiers">Anthropic blog</a> <a class="bracket" href="https://x.com/JerryWeiAI/status/2009741781425066092">tweet</a></div><div class="note">* Equal contribution.</div>
+  </li>
+</ul>
+<h2 class="year">2025</h2>
+<ul class="pubs">
+  <li>
+    <div class="ptitle"><a href="https://alignment.anthropic.com/2025/cheap-monitors/">Cost-Effective Constitutional Classifiers via Representation Re-use.</a><span class="caret">^</span></div>
+    <div class="authors">Hoagy Cunningham, Alwin Peng, <b class="me">Jerry Wei</b>, Euan Ong, Fabien Roger, Linda Petrini, Misha Wagner, Vladimir Mikulik, Mrinank Sharma.</div>
+    <div class="meta"><a class="bracket" href="https://alignment.anthropic.com/2025/cheap-monitors/">Anthropic blog</a></div>
+  </li>
+  <li>
+    <div class="ptitle"><a href="https://arxiv.org/abs/2501.18837">Constitutional classifiers: defending against universal jailbreaks across thousands of hours of red teaming.</a></div>
+    <div class="authors">Mrinank Sharma*, Meg Tong*, Jesse Mu*, <b class="me">Jerry Wei*</b>, Jorrit Kruthoff*, Scott Goodfriend*, Euan Ong*, Alwin Peng, Raj Agarwal, Cem Anil, Amanda Askell, Nathan Bailey, Joe Benton, Emma Bluemke, Samuel R. Bowman, Eric Christiansen, Hoagy Cunningham, Andy Dau, Anjali Gopal, Rob Gilson, Logan Graham, Logan Howard, Nimit Kalra, Taesung Lee, Kevin Lin, Peter Lofgren, Francesco Mosconi, Clare O'Hara, Catherine Olsson, Linda Petrini, Samir Rajani, Nikhil Saxena, Alex Silverstein, Tanya Singh, Theodore Sumers, Leonard Tang, Kevin K. Troy, Constantin Weisser, Ruiqi Zhong, Giulio Zhou, Jan Leike, Jared Kaplan, Ethan Perez.</div>
+    <div class="meta"><a class="bracket" href="https://www.anthropic.com/research/constitutional-classifiers">Anthropic blog</a> <a class="bracket" href="https://x.com/JerryWeiAI/status/1886453091811401874">tweet</a> <a class="bracket" href="https://www.youtube.com/watch?v=BaNXYqcfDyo">video</a></div><div class="note">* Equal contribution.</div>
+  </li>
+</ul>
+<h2 class="year">2024</h2>
+<ul class="pubs">
+  <li>
+    <div class="ptitle"><a href="https://www.anthropic.com/research/evaluating-feature-steering">Evaluating feature steering: A case study in mitigating social biases.</a><span class="caret">^</span></div>
+    <div class="authors">Esin Durmus, Alex Tamkin, Jack Clark, <b class="me">Jerry Wei</b>, Jonathan Marcus, Joshua Batson, Kunal Handa, Liane Lovitt, Meg Tong, Miles McCain, Oliver Rausch, Saffron Huang, Sam Bowman, Stuart Ritchie, Tom Henighan, Deep Ganguli.</div>
+    <div class="meta"><a class="bracket" href="https://www.anthropic.com/research/evaluating-feature-steering">Anthropic blog</a> <a class="bracket" href="https://x.com/AnthropicAI/status/1849840131412296039">tweet</a></div>
+  </li>
+  <li>
+    <div class="ptitle"><a href="https://arxiv.org/abs/2404.07503">Best Practices and Lessons Learned on Synthetic Data for Language Models.</a></div>
+    <div class="authors">Ruibo Liu, <b class="me">Jerry Wei</b>, Fangyu Liu, Chenglei Si, Yanzhe Zhang, Jinmeng Rao, Steven Zheng, Daiyi Peng, Diyi Yang, Denny Zhou, Andrew M. Dai.</div>
+    <div class="meta"><span class="venue">COLM 2024.</span> <a class="bracket" href="https://twitter.com/RuiboLiu/status/1778633696268141053">tweet</a></div>
+  </li>
+  <li>
+    <div class="ptitle"><a href="https://arxiv.org/abs/2403.18802">Long-form factuality in large language models.</a></div>
+    <div class="authors"><b class="me">Jerry Wei*</b>, Chengrun Yang*, Xinying Song*, Yifeng Lu*, Nathan Hu, Jie Huang, Dustin Tran, Daiyi Peng, Ruibo Liu, Da Huang, Cosmo Du, Quoc V. Le.</div>
+    <div class="meta"><span class="venue">NeurIPS 2024.</span> <a class="bracket" href="https://github.com/google-deepmind/long-form-factuality">code</a> <a class="bracket" href="https://drive.google.com/file/d/1F0CoN6kYNKyofy6MP8n_fjYCiBt4PDJC/view?usp=sharing">slides</a> <a class="bracket" href="https://twitter.com/JerryWeiAI/status/1773402343301877960">tweet</a></div><div class="note">* Lead contributor.</div>
+  </li>
+</ul>
+<h2 class="year">2023</h2>
+<ul class="pubs">
+  <li>
+    <div class="ptitle"><a href="https://arxiv.org/abs/2310.03214">FreshLLMs: Refreshing large language models with search engine augmentation.</a></div>
+    <div class="authors">Tu Vu, Mohit Iyyer, Xuezhi Wang, Noah Constant, <b class="me">Jerry Wei</b>, Jason Wei, Chris Tar, Yun-Hsuan Sung, Denny Zhou, Quoc V. Le, Thang Luong.</div>
+    <div class="meta"><span class="venue">Findings of ACL 2024.</span> <a class="bracket" href="https://github.com/freshllms/freshqa">code</a> <a class="bracket" href="https://twitter.com/JerryWeiAI/status/1710406316219564228">tweet</a></div>
+  </li>
+  <li>
+    <div class="ptitle"><a href="https://arxiv.org/abs/2308.03958">Simple synthetic data reduces sycophancy in large language models.</a></div>
+    <div class="authors"><b class="me">Jerry Wei</b>, Da Huang, Yifeng Lu, Denny Zhou, Quoc V. Le.</div>
+    <div class="meta"><a class="bracket" href="https://github.com/google/sycophancy-intervention">code</a> <a class="bracket" href="https://twitter.com/JerryWeiAI/status/1689340237993185280">tweet</a></div>
+  </li>
+  <li>
+    <div class="ptitle"><a href="https://arxiv.org/abs/2305.08298">Symbol tuning improves in-context learning in language models.</a></div>
+    <div class="authors"><b class="me">Jerry Wei</b>, Le Hou, Andrew Lampinen, Xiangning Chen, Da Huang, Yi Tay, Xinyun Chen, Yifeng Lu, Denny Zhou, Tengyu Ma, Quoc V. Le.</div>
+    <div class="meta"><span class="venue">EMNLP 2023.</span> <a class="bracket" href="https://github.com/JerryWeiAI/symbol-tuning">code</a> <a class="bracket" href="https://ai.googleblog.com/2023/07/symbol-tuning-improves-in-context.html">Google AI blog</a> <a class="bracket" href="https://underline.io/events/431/posters/16518/poster/89055-symbol-tuning-improves-in-context-learning-in-language-models">talk</a> <a class="bracket" href="https://twitter.com/JerryWeiAI/status/1658531449912393729">tweet</a></div>
+  </li>
+  <li>
+    <div class="ptitle"><a href="https://arxiv.org/abs/2303.03846">Larger language models do in-context learning differently.</a></div>
+    <div class="authors"><b class="me">Jerry Wei</b>, Jason Wei, Yi Tay, Dustin Tran, Albert Webson, Yifeng Lu, Xinyun Chen, Hanxiao Liu, Da Huang, Denny Zhou, Tengyu Ma.</div>
+    <div class="meta"><a class="bracket" href="https://ai.googleblog.com/2023/05/larger-language-models-do-in-context.html">Google AI blog</a> <a class="bracket" href="https://docs.google.com/presentation/d/1JvZExhi2KdYRDezD3YrQfs70HLPgQsj9CdK6K0gse40/edit?usp=sharing">slides</a> <a class="bracket" href="https://twitter.com/JerryWeiAI/status/1633548780619571200">tweet</a></div>
+  </li>
+</ul>
+<h2 class="year">2022</h2>
+<ul class="pubs">
+  <li>
+    <div class="ptitle"><a href="https://arxiv.org/abs/2201.11866">Calibrating histopathology image classifiers using label smoothing.</a></div>
+    <div class="authors"><b class="me">Jerry Wei</b>, Lorenzo Torresani, Jason Wei, Saeed Hassanpour.</div>
+    <div class="meta"><span class="venue">AIME 2022.</span> </div>
+  </li>
+</ul>
+<h2 class="year">2021</h2>
+<ul class="pubs">
+  <li>
+    <div class="ptitle"><a href="https://arxiv.org/abs/2101.12355">A petri dish for histopathology image analysis.</a></div>
+    <div class="authors"><b class="me">Jerry Wei</b>, Arief Suriawinata, Bing Ren, Xiaoying Liu, Mikhail Lisovsky, Louis Vaickus, Charles Brown, Michael Baker, Naofumi Tomita, Lorenzo Torresani, Jason Wei, Saeed Hassanpour.</div>
+    <div class="meta"><span class="venue">AIME 2021.</span> <a class="bracket" href="https://bmirds.github.io/MHIST/">code</a></div>
+  </li>
+</ul>
+<h2 class="year">2020</h2>
+<ul class="pubs">
+  <li>
+    <div class="ptitle"><a href="https://arxiv.org/abs/2009.13698">Learn like a pathologist: curriculum learning by annotator agreement for histopathology image classification.</a></div>
+    <div class="authors"><b class="me">Jerry Wei</b>, Arief Suriawinata, Bing Ren, Xiaoying Liu, Mikhail Lisovsky, Louis Vaickus, Charles Brown, Michael Baker, Mustafa Nasir-Moin, Naofumi Tomita, Lorenzo Torresani, Jason Wei, Saeed Hassanpour.</div>
+    <div class="meta"><span class="venue">WACV 2021.</span> <a class="bracket" href="https://papertalk.org/papertalks/27214">talk</a> <a class="bracket" href="https://towardsdatascience.com/applying-curriculum-learning-to-medical-images-184275c52350">blog</a></div>
+  </li>
+  <li>
+    <div class="ptitle"><a href="https://arxiv.org/abs/2004.12535">Difficulty translation in histopathology images.</a></div>
+    <div class="authors"><b class="me">Jerry Wei</b>, Arief Suriawinata, Xiaoying Liu, Bing Ren, Mustafa Nasir-Moin, Naofumi Tomita, Jason Wei, Saeed Hassanpour.</div>
+    <div class="meta"><span class="venue">AIME 2020.</span> <a class="bracket" href="https://github.com/BMIRDS/DifficultyTranslation">code</a> <a class="bracket" href="https://towardsdatascience.com/improving-classifier-performance-by-changing-the-difficulty-of-images-cae33464e8d3">blog</a></div>
+  </li>
+  <li>
+    <div class="ptitle"><a href="https://arxiv.org/abs/2005.12522">What are people asking about Covid-19? A question classification dataset.</a></div>
+    <div class="authors"><b class="me">Jerry Wei</b>, Chengyu Huang, Soroush Vosoughi, Jason Wei.</div>
+    <div class="meta"><span class="venue">NLP for COVID Workshop at ACL 2020.</span> <a class="bracket" href="https://github.com/JerryWeiAI/COVID-Q">code</a> <a class="bracket" href="https://slideslive.com/38931809/w20-nlpcovid-live-stream?time=7819">talk</a></div>
+  </li>
+  <li>
+    <div class="ptitle"><a href="https://arxiv.org/abs/2006.03051">NewB: 200,000+ sentences for political bias detection.</a></div>
+    <div class="authors"><b class="me">Jerry Wei</b>.</div>
+    <div class="meta"><span class="venue">Intel ISEF 2019.</span> <a class="bracket" href="https://github.com/JerryWeiAI/NewB">code</a></div>
+  </li>
+</ul>
+<h2 class="year">2019</h2>
+<ul class="pubs">
+  <li>
+    <div class="ptitle"><a href="https://arxiv.org/abs/1910.05827">Generative image translation for data augmentation in colorectal histopathology images.</a></div>
+    <div class="authors"><b class="me">Jerry Wei</b>, Arief Suriawinata, Louis Vaickus, Bing Ren, Xiaoying Liu, Jason Wei, Saeed Hassanpour.</div>
+    <div class="meta"><span class="venue">ML4H Workshop at NeurIPS 2019.</span> <a class="bracket" href="https://github.com/BMIRDS/HistoGAN">code</a> <a class="bracket" href="https://slideslive.com/38923239?time=1095">talk</a></div>
+  </li>
+  <li>
+    <div class="ptitle"><a href="https://www.sciencedirect.com/science/article/pii/S2153353922003704">Automated detection of celiac disease on duodenal biopsy slides: A deep learning approach.</a></div>
+    <div class="authors">Jason Wei, <b class="me">Jerry Wei</b>, Christopher Jackson, Bing Ren, Arief Suriawinata, Saeed Hassanpour.</div>
+    <div class="meta"><span class="venue">Journal of Pathology Informatics.</span> </div>
+  </li>
+</ul>
 </div></main>
 </body>
 </html>

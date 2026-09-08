@@ -2,6 +2,19 @@
 (function () {
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  // Theme toggle. Light by default; the choice is remembered per browser.
+  var btn = document.querySelector('.theme-toggle');
+  function setLabel() { var dark = document.documentElement.getAttribute('data-theme') === 'dark'; btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode'); }
+  if (btn) {
+    setLabel();
+    btn.addEventListener('click', function () {
+      var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+      if (dark) document.documentElement.removeAttribute('data-theme'); else document.documentElement.setAttribute('data-theme', 'dark');
+      try { localStorage.setItem('theme', dark ? 'light' : 'dark'); } catch (e) {}
+      setLabel();
+    });
+  }
+
   // Sticky header: show a faint edge once the page has scrolled.
   var header = document.querySelector('header.site');
   function onScroll() { header.classList.toggle('scrolled', window.scrollY > 8); }

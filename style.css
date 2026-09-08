@@ -25,6 +25,7 @@
   --accent: #0072bb;        /* French blue: links, active nav */
   --accent-hover: #005a94;  /* darker French blue on hover */
   --lilac: #86608e;         /* French lilac: highlights */
+  --hl: rgba(231, 172, 207, 0.5);   /* wash behind my name in author lists */
   --card: #f0eee6;      /* ivory medium */
   --max: 780px;         /* content width, every page */
   /* Type scale, every page */
@@ -35,12 +36,26 @@
   --fs-h2: 2.1rem;
   --fs-h1: 3rem;
 }
+
+/* Dark theme: Anthropic's slate/ivory neutrals inverted, with lifted accents. Off by default; toggled on the page. */
+:root[data-theme="dark"] {
+  --bg: #141413;        /* slate dark */
+  --fg: #faf9f5;        /* ivory light */
+  --muted: #b0aea5;     /* cloud medium */
+  --rule: #3d3d3a;      /* slate medium */
+  --card: #1f1f1d;
+  --accent: #9bddff;        /* Columbia blue */
+  --accent-hover: #c5ecff;
+  --lilac: #e0b0ff;         /* mauve */
+  --hl: rgba(252, 142, 172, 0.45);  /* flamingo pink */
+}
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 body {
   margin: 0;
   background: var(--bg);
   color: var(--fg);
+  transition: background-color 0.2s ease, color 0.2s ease;
   font-family: "Comfortaa", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: var(--fs-body);
   line-height: 1.6;
@@ -109,7 +124,7 @@ main.home .block h2 { margin-top: 0; }
 .socials ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 22px; }
 .socials img { width: 56px; height: 56px; display: block; }
 .socials a { display: block; border-radius: 50%; transition: transform 0.18s ease, box-shadow 0.18s ease; }
-.socials a:hover { transform: translateY(-3px); box-shadow: 0 6px 14px rgba(20, 20, 19, 0.18); }
+.socials a:hover { transform: translateY(-3px); box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25); }
 .socials a:hover img { opacity: 1; }
 .socials .label { margin-top: 14px; font-weight: 700; }
 a.ptitle { color: var(--lilac); }
@@ -121,7 +136,7 @@ ul.talks li { display: flex; gap: 24px; padding: 8px 0; align-items: baseline; }
 ul.talks .when { flex: 0 0 110px; font-size: var(--fs-small); font-variant-numeric: tabular-nums; }
 
 ul.tl { list-style: none; padding: 0; margin: 0; }
-ul.tl li { display: grid; grid-template-columns: 64px 1fr; gap: 0 24px; padding: 22px 0; border-bottom: 1px solid #cfcdc4; }
+ul.tl li { display: grid; grid-template-columns: 64px 1fr; gap: 0 24px; padding: 22px 0; border-bottom: 1px solid var(--rule); }
 ul.tl li:last-child { border-bottom: 0; }
 ul.tl .side { display: flex; flex-direction: column; align-items: center; }
 ul.tl .logo { width: 64px; height: 64px; object-fit: contain; display: block; }
@@ -131,8 +146,8 @@ ul.tl .role u { text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
 ul.tl .where { color: var(--muted); }
 ul.tl .sub { margin-top: 16px; font-size: var(--fs-small); }
 ul.tl .sub .role { font-size: 1rem; }
-ul.tl .stem { flex: 1; width: 2px; background: #5e5d59; margin: 24px 0 8px; position: relative; }
-ul.tl .stem::before, ul.tl .stem::after { content: ""; position: absolute; left: -3px; width: 8px; height: 8px; border-radius: 50%; background: #5e5d59; }
+ul.tl .stem { flex: 1; width: 2px; background: var(--muted); margin: 24px 0 8px; position: relative; }
+ul.tl .stem::before, ul.tl .stem::after { content: ""; position: absolute; left: -3px; width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
 ul.tl .stem::before { top: -4px; }
 ul.tl .stem::after { bottom: -4px; }
 strong.lead { color: var(--lilac); font-weight: 700; }
@@ -153,15 +168,15 @@ figcaption { font-size: var(--fs-small); color: var(--muted); margin-top: 8px; }
 .footnote { font-size: var(--fs-small); margin-top: 4px; }
 .center { text-align: center; }
 .back-top { margin-top: 88px; }
-a.button { display: inline-block; padding: 8px 18px; border: 1.5px solid #3d3d3a; border-radius: 4px; color: #3d3d3a; }
+a.button { display: inline-block; padding: 8px 18px; border: 1.5px solid var(--muted); border-radius: 4px; color: var(--fg); }
 a.button:hover { text-decoration: none; background: var(--card); }
 h2.year { text-decoration: underline; text-underline-offset: 6px; margin: 40px 0 10px; scroll-margin-top: 84px; }
 ul.pubs { list-style: none; padding: 0; margin: 0; line-height: 1.6; }
 ul.pubs li { padding: 10px 6px 14px; margin: 0 -6px; border-radius: 6px; scroll-margin-top: 84px; transition: background-color 0.6s ease; }
-ul.pubs li.flash { background-color: rgba(231, 172, 207, 0.35); transition: none; }
+ul.pubs li.flash { background-color: var(--hl); transition: none; }
 ul.pubs .ptitle { font-size: var(--fs-lead); line-height: 1.4; margin-bottom: 4px; }
 ul.pubs .caret { margin-left: 0; color: var(--accent); }
-ul.pubs .me { font-weight: 700; background: rgba(231, 172, 207, 0.5); border-radius: 3px; padding: 0 3px; }
+ul.pubs .me { font-weight: 700; background: var(--hl); border-radius: 3px; padding: 0 3px; }
 ul.pubs .venue { color: var(--lilac); }
 ul.pubs .meta a.chip { color: var(--lilac); }
 ul.pubs .note { color: var(--muted); font-size: var(--fs-small); margin-top: 2px; }
@@ -211,3 +226,22 @@ ul.tl .dur { color: var(--muted); font-size: var(--fs-small); font-weight: 400; 
 /* Reading progress hairline, papers page only */
 .progress { position: fixed; top: 0; left: 0; height: 3px; width: 0; background: var(--accent); z-index: 20; }
 
+
+/* Dark-only image tweaks: the Anthropic mark and the social icons are black-on-transparent */
+:root[data-theme="dark"] img[src$="anthropic.png"], :root[data-theme="dark"] .socials img { filter: invert(1); }
+
+/* Theme toggle, bottom right */
+.theme-toggle {
+  position: fixed; right: 20px; bottom: 20px; z-index: 15;
+  width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--rule);
+  background: var(--bg); color: var(--fg); cursor: pointer; padding: 0;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  transition: transform 0.18s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.theme-toggle:hover { transform: translateY(-2px); }
+.theme-toggle svg { width: 18px; height: 18px; }
+.theme-toggle .moon { display: none; }
+:root[data-theme="dark"] .theme-toggle .sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .moon { display: block; }
+@media print { .theme-toggle { display: none !important; } }

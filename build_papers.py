@@ -31,8 +31,10 @@ def render_papers(data):
                 v = f'<span class="venue">{p["venue"]}.</span> ' if p.get("venue") else ""
                 meta = f'<div class="meta">{v}{" ".join(chip(l) for l in p.get("links", []))}</div>'
             note = f'<div class="note">{p["note"]}</div>' if p.get("note") else ""
-            out.append(f'''  <li id="{p["id"]}">
-    <div class="ptitle"><a href="{p["url"]}"{EXT}>{p["title"]}.</a>{caret}</div>
+            dot = '<span class="dot" title="Selected paper"></span>' if p.get("selected") else ''
+            topics = " ".join(p.get("topics", []))
+            out.append(f'''  <li id="{p["id"]}" data-topics="{topics}">
+    <div class="ptitle"><a href="{p["url"]}"{EXT}>{p["title"]}.</a>{caret}{dot}</div>
     <div class="authors">{esc_authors(p["authors"], me)}</div>
     {meta}{note}
   </li>''')

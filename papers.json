@@ -11,6 +11,10 @@
         "Zihan Wang",
         "Jenny Bao",
         "Jerry Wei"
+      ],
+      "topics": [
+        "safety",
+        "lm"
       ]
     },
     {
@@ -31,7 +35,11 @@
           "url": "https://alignment.anthropic.com/2026/backdooring-classifiers/"
         }
       ],
-      "blog_only": true
+      "blog_only": true,
+      "topics": [
+        "safety",
+        "lm"
+      ]
     },
     {
       "id": "segment-level-coherence-for-robust-harmful",
@@ -45,6 +53,10 @@
         "Jenny Bao",
         "Hoagy Cunningham",
         "Jerry Wei"
+      ],
+      "topics": [
+        "safety",
+        "lm"
       ]
     },
     {
@@ -59,7 +71,11 @@
         "Ming Jin",
         "Jerry Wei"
       ],
-      "venue": "ICML 2026"
+      "venue": "ICML 2026",
+      "topics": [
+        "safety",
+        "lm"
+      ]
     },
     {
       "id": "constitutional-classifiers-efficient-production-grade-defenses",
@@ -115,7 +131,11 @@
           "label": "blog",
           "url": "https://www.anthropic.com/research/next-generation-constitutional-classifiers"
         }
-      }
+      },
+      "topics": [
+        "safety",
+        "lm"
+      ]
     },
     {
       "id": "cost-effective-constitutional-classifiers-via-representation",
@@ -139,7 +159,11 @@
           "url": "https://alignment.anthropic.com/2025/cheap-monitors/"
         }
       ],
-      "blog_only": true
+      "blog_only": true,
+      "topics": [
+        "safety",
+        "lm"
+      ]
     },
     {
       "id": "constitutional-classifiers-defending-against-universal-jailbreaks",
@@ -212,7 +236,11 @@
           "label": "blog",
           "url": "https://www.anthropic.com/research/constitutional-classifiers"
         }
-      }
+      },
+      "topics": [
+        "safety",
+        "lm"
+      ]
     },
     {
       "id": "evaluating-feature-steering-a-case-study",
@@ -247,7 +275,11 @@
           "url": "https://x.com/AnthropicAI/status/1849840131412296039"
         }
       ],
-      "blog_only": true
+      "blog_only": true,
+      "topics": [
+        "safety",
+        "lm"
+      ]
     },
     {
       "id": "best-practices-and-lessons-learned-on",
@@ -273,6 +305,9 @@
           "label": "tweet",
           "url": "https://twitter.com/RuiboLiu/status/1778633696268141053"
         }
+      ],
+      "topics": [
+        "lm"
       ]
     },
     {
@@ -316,7 +351,10 @@
           "label": "code",
           "url": "https://github.com/google-deepmind/long-form-factuality"
         }
-      }
+      },
+      "topics": [
+        "lm"
+      ]
     },
     {
       "id": "freshllms-refreshing-large-language-models-with",
@@ -346,6 +384,9 @@
           "label": "tweet",
           "url": "https://twitter.com/JerryWeiAI/status/1710406316219564228"
         }
+      ],
+      "topics": [
+        "lm"
       ]
     },
     {
@@ -376,7 +417,11 @@
           "label": "code",
           "url": "https://github.com/google/sycophancy-intervention"
         }
-      }
+      },
+      "topics": [
+        "safety",
+        "lm"
+      ]
     },
     {
       "id": "symbol-tuning-improves-in-context-learning",
@@ -421,7 +466,10 @@
           "label": "blog",
           "url": "https://ai.googleblog.com/2023/07/symbol-tuning-improves-in-context.html"
         }
-      }
+      },
+      "topics": [
+        "lm"
+      ]
     },
     {
       "id": "larger-language-models-do-in-context",
@@ -461,7 +509,10 @@
           "label": "blog",
           "url": "https://ai.googleblog.com/2023/05/larger-language-models-do-in-context.html"
         }
-      }
+      },
+      "topics": [
+        "lm"
+      ]
     },
     {
       "id": "calibrating-histopathology-image-classifiers-using-label",
@@ -474,7 +525,10 @@
         "Jason Wei",
         "Saeed Hassanpour"
       ],
-      "venue": "AIME 2022"
+      "venue": "AIME 2022",
+      "topics": [
+        "medical"
+      ]
     },
     {
       "id": "a-petri-dish-for-histopathology-image",
@@ -501,6 +555,9 @@
           "label": "code",
           "url": "https://bmirds.github.io/MHIST/"
         }
+      ],
+      "topics": [
+        "medical"
       ]
     },
     {
@@ -533,6 +590,9 @@
           "label": "blog",
           "url": "https://towardsdatascience.com/applying-curriculum-learning-to-medical-images-184275c52350"
         }
+      ],
+      "topics": [
+        "medical"
       ]
     },
     {
@@ -560,6 +620,9 @@
           "label": "blog",
           "url": "https://towardsdatascience.com/improving-classifier-performance-by-changing-the-difficulty-of-images-cae33464e8d3"
         }
+      ],
+      "topics": [
+        "medical"
       ]
     },
     {
@@ -583,6 +646,9 @@
           "label": "talk",
           "url": "https://slideslive.com/38931809/w20-nlpcovid-live-stream?time=7819"
         }
+      ],
+      "topics": [
+        "lm"
       ]
     },
     {
@@ -599,6 +665,9 @@
           "label": "code",
           "url": "https://github.com/JerryWeiAI/NewB"
         }
+      ],
+      "topics": [
+        "lm"
       ]
     },
     {
@@ -625,6 +694,9 @@
           "label": "talk",
           "url": "https://slideslive.com/38923239?time=1095"
         }
+      ],
+      "topics": [
+        "medical"
       ]
     },
     {
@@ -640,7 +712,10 @@
         "Arief Suriawinata",
         "Saeed Hassanpour"
       ],
-      "venue": "Journal of Pathology Informatics"
+      "venue": "Journal of Pathology Informatics",
+      "topics": [
+        "medical"
+      ]
     }
   ]
 }

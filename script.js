@@ -4,7 +4,7 @@
 
   // Theme toggle. Light by default; the choice is remembered per browser.
   var btn = document.querySelector('.theme-toggle');
-  function setLabel() { var dark = document.documentElement.getAttribute('data-theme') === 'dark'; btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode'); }
+  function setLabel() { var dark = document.documentElement.getAttribute('data-theme') === 'dark'; btn.setAttribute('aria-checked', dark ? 'true' : 'false'); btn.title = dark ? 'Dark mode on' : 'Dark mode off'; }
   if (btn) {
     setLabel();
     btn.addEventListener('click', function () {
@@ -42,6 +42,35 @@
         a.classList.add('copied'); setTimeout(function () { a.classList.remove('copied'); }, 1400);
       });
     });
+  });
+
+  // Topic filters on the papers page.
+  var filters = document.querySelectorAll('.filters a[data-topic]');
+  filters.forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      var topic = a.dataset.topic;
+      filters.forEach(function (x) { x.setAttribute('aria-pressed', x === a ? 'true' : 'false'); });
+      document.querySelectorAll('ul.pubs > li').forEach(function (li) {
+        li.classList.toggle('hide', topic !== 'all' && li.dataset.topics.split(' ').indexOf(topic) < 0);
+      });
+      document.querySelectorAll('h2.year').forEach(function (h) {
+        var list = h.nextElementSibling, any = list && list.querySelector('li:not(.hide)');
+        h.classList.toggle('hide', !any);
+      });
+    });
+  });
+
+  // Copy-link button on each paper title; visible on hover.
+  document.querySelectorAll('ul.pubs > li[id]').forEach(function (li) {
+    var b = document.createElement('button'); b.type = 'button'; b.className = 'copy-link'; b.setAttribute('aria-label', 'Copy link to this paper');
+    b.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M15 9V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4"/></svg><span class="toast">Copied!</span>';
+    b.addEventListener('click', function () {
+      if (!navigator.clipboard) return;
+      var url = location.origin + location.pathname + '#' + li.id;
+      navigator.clipboard.writeText(url).then(function () { b.classList.add('copied'); setTimeout(function () { b.classList.remove('copied'); }, 1400); });
+    });
+    li.querySelector('.ptitle').appendChild(b);
   });
 
   // Paper anchors: jump to the entry and flash it.

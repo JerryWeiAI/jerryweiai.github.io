@@ -132,7 +132,7 @@ ul.pubs { list-style: none; padding: 0; margin: 0; line-height: 1.6; }
 ul.pubs li { padding: 10px 0 14px; }
 ul.pubs .ptitle { font-size: 1.15rem; line-height: 1.4; margin-bottom: 4px; }
 ul.pubs .ptitle a { text-decoration: underline; }
-ul.pubs .caret { margin-left: 0; }
+ul.pubs .caret { margin-left: 0; color: var(--accent); }
 ul.pubs .me { font-weight: 700; text-decoration: underline; }
 ul.pubs .venue { color: var(--lilac); }
 ul.pubs .meta a.bracket { color: var(--lilac); }

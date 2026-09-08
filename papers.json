@@ -144,7 +144,7 @@
     {
       "id": "constitutional-classifiers-defending-against-universal-jailbreaks",
       "year": 2025,
-      "title": "Constitutional classifiers: defending against universal jailbreaks across thousands of hours of red teaming",
+      "title": "Constitutional classifiers: Defending against universal jailbreaks across thousands of hours of red teaming",
       "url": "https://arxiv.org/abs/2501.18837",
       "authors": [
         "Mrinank Sharma*",
@@ -211,8 +211,7 @@
         "link": {
           "label": "blog",
           "url": "https://www.anthropic.com/research/constitutional-classifiers"
-        },
-        "title": "Constitutional classifiers: Defending against universal jailbreaks across thousands of hours of red teaming"
+        }
       }
     },
     {

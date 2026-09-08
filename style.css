@@ -113,4 +113,4 @@ figure { margin: 20px 0; }
 figure img { border-radius: 10px; display: block; }
 figcaption { font-size: 0.9rem; color: var(--muted); margin-top: 8px; }
 
-footer.site { border-top: 1px solid var(--rule); padding: 20px 0 32px; color: var(--muted); font-size: 0.9rem; }
+footer.site { padding: 20px 0 32px; color: var(--muted); font-size: 0.9rem; }

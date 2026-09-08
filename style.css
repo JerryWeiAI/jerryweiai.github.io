@@ -43,12 +43,10 @@ img { max-width: 100%; height: auto; }
 
 .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
 
-header.site {
-  border-bottom: 1px solid var(--rule);
-}
 header.site .wrap {
+  max-width: none; padding: 18px 28px;
   display: flex; align-items: center; justify-content: space-between;
-  flex-wrap: wrap; gap: 12px 24px; padding-top: 18px; padding-bottom: 18px;
+  flex-wrap: wrap; gap: 12px 24px;
 }
 .logo img { height: 34px; width: auto; display: block; }
 nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 22px; flex-wrap: wrap; }

@@ -69,7 +69,7 @@ main.home .wrap { max-width: 1200px; }
 main.home .intro, main.home .block { padding: 0 clamp(0px, 9%, 110px); }
 .intro { display: flex; gap: 48px; align-items: center; flex-wrap: wrap; }
 .intro .text { flex: 1 1 380px; }
-.intro img.headshot { width: 380px; max-width: 100%; aspect-ratio: 690 / 738; object-fit: cover; flex: none; }
+.intro img.headshot { width: 380px; max-width: 100%; aspect-ratio: 690 / 738; object-fit: cover; flex: none; border-radius: 12px; }
 .intro h1 { margin: 20px 0 32px; }
 .socials { text-align: center; margin: 36px 0 20px; }
 .socials ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 22px; }

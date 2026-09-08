@@ -47,9 +47,8 @@ body {
 }
 /* Every link draws its underline with a background gradient so it can animate.
    Plain links draw a line in from the left on hover. Links with a standing
-   underline get a second, colored line that sweeps across on hover. */
+   underline keep it and it thickens on hover. */
 a {
-  --sweep: var(--lilac);
   color: var(--accent); text-decoration: none;
   background-image: linear-gradient(currentColor, currentColor);
   background-size: 0% 1px; background-repeat: no-repeat; background-position: 0 100%;
@@ -57,11 +56,9 @@ a {
   transition: background-size 0.25s ease, color 0.15s ease;
 }
 a:hover { color: var(--accent-hover); background-size: 100% 1px; }
-a.bracket, a.ul, ul.pubs .ptitle a, dl.contact dd a, ul.talks .what a {
-  background-image: linear-gradient(var(--sweep), var(--sweep)), linear-gradient(currentColor, currentColor);
-  background-size: 0% 2px, 100% 1px;
-}
-a.bracket:hover, a.ul:hover, ul.pubs .ptitle a:hover, dl.contact dd a:hover, ul.talks .what a:hover { background-size: 100% 2px, 100% 1px; }
+/* Standing underline: the line thickens on hover, same color. */
+a.bracket, a.ul, ul.pubs .ptitle a, dl.contact dd a, ul.talks .what a { background-size: 100% 1px; }
+a.bracket:hover, a.ul:hover, ul.pubs .ptitle a:hover, dl.contact dd a:hover, ul.talks .what a:hover { background-size: 100% 2px; }
 .socials a, .logo, a.button { background-image: none; }
 .bk { color: var(--accent); }
 img { max-width: 100%; height: auto; }
@@ -109,7 +106,7 @@ main.home .block h2 { margin-top: 0; }
 .socials a:hover img { opacity: 1; }
 .socials .label { margin-top: 14px; font-weight: 700; }
 a.ptitle { color: var(--lilac); }
-a.ptitle:hover { color: var(--lilac); --sweep: var(--accent); }
+a.ptitle:hover { color: var(--lilac); }
 ul.selected { list-style: none; padding: 0; margin: 0; }
 ul.selected li { padding: 7px 0; }
 ul.talks { list-style: none; padding: 0; margin: 0; }
@@ -157,7 +154,7 @@ ul.pubs .ptitle { font-size: var(--fs-lead); line-height: 1.4; margin-bottom: 4p
 ul.pubs .caret { margin-left: 0; color: var(--accent); }
 ul.pubs .me { font-weight: 700; background: rgba(231, 172, 207, 0.5); border-radius: 3px; padding: 0 3px; }
 ul.pubs .venue { color: var(--lilac); }
-ul.pubs .meta a.bracket { color: var(--lilac); --sweep: var(--accent); }
+ul.pubs .meta a.bracket { color: var(--lilac); }
 ul.pubs .meta .bk { color: var(--lilac); }
 ul.pubs .note { color: var(--muted); font-size: var(--fs-small); margin-top: 2px; }
 

@@ -176,8 +176,8 @@ ul.pubs .ptitle .dot { position: absolute; left: -18px; top: 0.7em; }
 .filters a[aria-pressed="true"] { font-weight: 700; }
 ul.pubs li.hide, h2.year.hide { display: none; }
 .copy-link {
-  display: inline-block; margin-left: 6px; padding: 0; border: 0; background: none; color: var(--accent); cursor: pointer;
-  vertical-align: middle; position: relative; top: -1px; opacity: 0; transition: opacity 0.15s ease;
+  position: absolute; right: -22px; top: 0.35em; padding: 0; border: 0; background: none; color: var(--accent); cursor: pointer;
+  opacity: 0; transition: opacity 0.15s ease;
 }
 .copy-link svg { width: 15px; height: 15px; display: block; }
 ul.pubs li:hover .copy-link, .copy-link:focus-visible { opacity: 0.85; }
@@ -233,7 +233,7 @@ main.notfound { padding-top: 72px; }
 ul.tl .dur { color: var(--muted); font-size: var(--fs-small); font-weight: 400; margin-left: 6px; }
 
 /* Copied confirmation */
-.copy-email, .copy-link { position: relative; }
+.copy-email { position: relative; }
 .copy-email .toast, .copy-link .toast {
   position: absolute; left: 50%; bottom: calc(100% + 8px); transform: translateX(-50%) translateY(4px);
   background: var(--fg); color: var(--bg); font-size: var(--fs-small); line-height: 1; padding: 6px 9px; border-radius: 5px;

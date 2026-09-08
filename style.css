@@ -26,7 +26,14 @@
   --accent-hover: #005a94;  /* darker French blue on hover */
   --lilac: #86608e;         /* French lilac: highlights */
   --card: #f0eee6;      /* ivory medium */
-  --max: 720px;
+  --max: 960px;         /* content width, every page */
+  /* Type scale, every page */
+  --fs-body: 16px;
+  --fs-small: 0.9rem;   /* dates, notes, footnotes */
+  --fs-lead: 1.15rem;   /* paper titles, timeline roles */
+  --fs-h3: 1.6rem;
+  --fs-h2: 2.1rem;
+  --fs-h1: 3rem;
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
@@ -35,7 +42,7 @@ body {
   background: var(--bg);
   color: var(--fg);
   font-family: "Comfortaa", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: var(--fs-body);
   line-height: 1.6;
 }
 /* Every link draws its underline with a background gradient so it can animate.
@@ -52,9 +59,9 @@ a {
 a:hover { color: var(--accent-hover); background-size: 100% 1px; }
 a.bracket, a.ul, ul.pubs .ptitle a, dl.contact dd a, ul.talks .what a {
   background-image: linear-gradient(var(--sweep), var(--sweep)), linear-gradient(currentColor, currentColor);
-  background-size: 0% 1px, 100% 1px;
+  background-size: 0% 2px, 100% 1px;
 }
-a.bracket:hover, a.ul:hover, ul.pubs .ptitle a:hover, dl.contact dd a:hover, ul.talks .what a:hover { background-size: 100% 1px, 100% 1px; }
+a.bracket:hover, a.ul:hover, ul.pubs .ptitle a:hover, dl.contact dd a:hover, ul.talks .what a:hover { background-size: 100% 2px, 100% 1px; }
 .socials a, .logo, a.button { background-image: none; }
 .bk { color: var(--accent); }
 img { max-width: 100%; height: auto; }
@@ -80,19 +87,17 @@ nav a:hover { text-decoration: none; color: var(--accent); }
 
 main { padding: 40px 0 80px; }
 h1, h2, h3 { font-family: "Caveat", cursive; font-weight: 400; line-height: 1.15; }
-h1 { font-size: 3rem; margin: 0 0 20px; }
-h2 { font-size: 2.1rem; margin: 44px 0 12px; }
-h3 { font-size: 1.6rem; margin: 26px 0 6px; }
+h1 { font-size: var(--fs-h1); margin: 0 0 20px; }
+h2 { font-size: var(--fs-h2); margin: 44px 0 12px; }
+h3 { font-size: var(--fs-h3); margin: 26px 0 6px; }
 p { margin: 0 0 16px; }
 .muted { color: var(--muted); }
-.small { font-size: 0.92rem; }
+.small { font-size: var(--fs-small); }
 
 /* Home page */
-main.home .wrap { max-width: 1200px; }
-main.home .intro, main.home .block { padding: 0 clamp(0px, 9%, 110px); }
 main.home .block { margin-top: 72px; }
 main.home .block h2 { margin-top: 0; }
-.intro { display: flex; gap: 48px; align-items: center; flex-wrap: wrap; }
+.intro { display: flex; gap: 56px; align-items: center; flex-wrap: wrap; }
 .intro .text { flex: 1 1 380px; }
 .intro img.headshot { width: 380px; max-width: 100%; aspect-ratio: 690 / 738; object-fit: cover; flex: none; border-radius: 12px; }
 .intro h1 { margin: 20px 0 32px; }
@@ -109,7 +114,7 @@ ul.selected { list-style: none; padding: 0; margin: 0; }
 ul.selected li { padding: 7px 0; }
 ul.talks { list-style: none; padding: 0; margin: 0; }
 ul.talks li { display: flex; gap: 24px; padding: 8px 0; align-items: baseline; }
-ul.talks .when { flex: 0 0 110px; font-size: 0.9rem; font-variant-numeric: tabular-nums; }
+ul.talks .when { flex: 0 0 110px; font-size: var(--fs-small); font-variant-numeric: tabular-nums; }
 
 ul.tl { list-style: none; padding: 0; margin: 0; }
 ul.tl li { display: grid; grid-template-columns: 64px 1fr; gap: 0 24px; padding: 22px 0; border-bottom: 1px solid #cfcdc4; }
@@ -117,10 +122,10 @@ ul.tl li:last-child { border-bottom: 0; }
 ul.tl .side { display: flex; flex-direction: column; align-items: center; }
 ul.tl .logo { width: 64px; height: 64px; object-fit: contain; display: block; }
 ul.tl .body > div { line-height: 1.7; }
-ul.tl .role { font-size: 1.15rem; }
+ul.tl .role { font-size: var(--fs-lead); }
 ul.tl .role u { text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
 ul.tl .where { color: var(--muted); }
-ul.tl .sub { margin-top: 16px; font-size: 0.9rem; }
+ul.tl .sub { margin-top: 16px; font-size: var(--fs-small); }
 ul.tl .sub .role { font-size: 1rem; }
 ul.tl .stem { flex: 1; width: 2px; background: #5e5d59; margin: 24px 0 8px; position: relative; }
 ul.tl .stem::before, ul.tl .stem::after { content: ""; position: absolute; left: -3px; width: 8px; height: 8px; border-radius: 50%; background: #5e5d59; }
@@ -138,24 +143,23 @@ dl.contact dt::after { content: ": "; white-space: pre; }
 
 figure { margin: 20px 0; }
 figure img { border-radius: 10px; display: block; }
-figcaption { font-size: 0.9rem; color: var(--muted); margin-top: 8px; }
+figcaption { font-size: var(--fs-small); color: var(--muted); margin-top: 8px; }
 
 /* Papers page */
-main.papers .wrap { max-width: 860px; }
-.footnote { font-size: 0.9rem; margin-top: 4px; }
+.footnote { font-size: var(--fs-small); margin-top: 4px; }
 .center { text-align: center; }
 a.button { display: inline-block; padding: 8px 18px; border: 1.5px solid #3d3d3a; border-radius: 4px; color: #3d3d3a; }
 a.button:hover { text-decoration: none; background: var(--card); }
 h2.year { text-decoration: underline; text-underline-offset: 6px; margin: 40px 0 10px; }
 ul.pubs { list-style: none; padding: 0; margin: 0; line-height: 1.6; }
 ul.pubs li { padding: 10px 0 14px; }
-ul.pubs .ptitle { font-size: 1.15rem; line-height: 1.4; margin-bottom: 4px; }
+ul.pubs .ptitle { font-size: var(--fs-lead); line-height: 1.4; margin-bottom: 4px; }
 ul.pubs .caret { margin-left: 0; color: var(--accent); }
 ul.pubs .me { font-weight: 700; background: rgba(231, 172, 207, 0.5); border-radius: 3px; padding: 0 3px; }
 ul.pubs .venue { color: var(--lilac); }
 ul.pubs .meta a.bracket { color: var(--lilac); --sweep: var(--accent); }
 ul.pubs .meta .bk { color: var(--lilac); }
-ul.pubs .note { color: var(--muted); font-size: 0.9rem; margin-top: 2px; }
+ul.pubs .note { color: var(--muted); font-size: var(--fs-small); margin-top: 2px; }
 
 /* Waving hand: one gentle wave on load, then still */
 .wave { display: inline-block; transform-origin: 70% 70%; }
@@ -168,7 +172,6 @@ ul.pubs .note { color: var(--muted); font-size: 0.9rem; margin-top: 2px; }
 
 /* Timeline footer and 404 */
 .updated { font-family: "Caveat", cursive; font-size: 1.1rem; color: var(--muted); margin: 88px 0 0; }
-main.home .updated { padding: 0 clamp(0px, 9%, 110px); }
 main.notfound { padding-top: 72px; }
 
 /* Print: papers as a plain list, no chrome */

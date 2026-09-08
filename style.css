@@ -71,6 +71,7 @@ a {
   transition: background-size 0.25s ease, color 0.15s ease;
 }
 a:hover { color: var(--accent-hover); background-size: 100% 1px; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
 /* Standing underline: the line thickens on hover, same color. */
 a.ul, ul.pubs .ptitle a, dl.contact dd a { background-size: 100% 1px; }
 a.ul:hover, ul.pubs .ptitle a:hover, dl.contact dd a:hover { background-size: 100% 2px; }
@@ -165,10 +166,13 @@ figure img { border-radius: 10px; display: block; }
 figcaption { font-size: var(--fs-small); color: var(--muted); margin-top: 8px; }
 
 /* Papers page */
-.legend { font-size: var(--fs-small); color: var(--muted); margin: 0 0 10px; }
+.legend { font-size: 0.8rem; color: var(--muted); margin: 0 0 6px; }
 .legend .caret { color: var(--accent); font-weight: 700; }
-.dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); vertical-align: middle; margin: 0 4px 0 6px; position: relative; top: -1px; }
-.legend .dot { margin: 0 2px 0 0; }
+.legend .gap { display: inline-block; width: 10px; }
+.dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+.legend .dot { vertical-align: middle; position: relative; top: -1px; margin-right: 5px; }
+ul.pubs .ptitle { position: relative; }
+ul.pubs .ptitle .dot { position: absolute; left: -18px; top: 0.7em; }
 .filters a[aria-pressed="true"] { font-weight: 700; }
 ul.pubs li.hide, h2.year.hide { display: none; }
 .copy-link {
@@ -221,7 +225,8 @@ main.notfound { padding-top: 72px; }
 }
 
 /* Year jump row on the papers page */
-.jump { font-size: 0.8rem; color: var(--muted); margin: -4px 0 18px; }
+.jump { font-size: 0.8rem; color: var(--muted); margin: 0 0 6px; }
+.filters { margin-bottom: 22px; }
 .jump .sep { margin: 0 2px; }
 
 /* Timeline durations, computed by script.js */
@@ -268,5 +273,4 @@ ul.tl .dur { color: var(--muted); font-size: var(--fs-small); font-weight: 400; 
 :root[data-theme="dark"] .theme-toggle > .sun { display: block; }
 .theme-toggle:hover .knob { transform: translateX(2px); }
 :root[data-theme="dark"] .theme-toggle:hover .knob { transform: translateX(30px); }
-.theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 @media print { .theme-toggle { display: none !important; } }

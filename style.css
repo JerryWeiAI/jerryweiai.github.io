@@ -57,10 +57,17 @@ a {
 }
 a:hover { color: var(--accent-hover); background-size: 100% 1px; }
 /* Standing underline: the line thickens on hover, same color. */
-a.bracket, a.ul, ul.pubs .ptitle a, dl.contact dd a, ul.talks .what a { background-size: 100% 1px; }
-a.bracket:hover, a.ul:hover, ul.pubs .ptitle a:hover, dl.contact dd a:hover, ul.talks .what a:hover { background-size: 100% 2px; }
-.socials a, .logo, a.button { background-image: none; }
-.bk { color: var(--accent); }
+a.ul, ul.pubs .ptitle a, dl.contact dd a, ul.talks .what a { background-size: 100% 1px; }
+a.ul:hover, ul.pubs .ptitle a:hover, dl.contact dd a:hover, ul.talks .what a:hover { background-size: 100% 2px; }
+.socials a, .logo, a.button, a.chip { background-image: none; }
+/* Inline pill buttons for blog / code / tweet links, same size as the text around them */
+a.chip {
+  display: inline-block; padding: 0 9px; margin: 0 1px; line-height: 1.35;
+  border: 1px solid currentColor; border-radius: 999px;
+  transition: background-color 0.18s ease, color 0.15s ease, transform 0.18s ease;
+}
+a.chip:hover { background-color: color-mix(in srgb, currentColor 12%, transparent); transform: translateY(-1px); }
+a.chip + a.chip { margin-left: 4px; }
 img { max-width: 100%; height: auto; }
 
 .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
@@ -154,8 +161,7 @@ ul.pubs .ptitle { font-size: var(--fs-lead); line-height: 1.4; margin-bottom: 4p
 ul.pubs .caret { margin-left: 0; color: var(--accent); }
 ul.pubs .me { font-weight: 700; background: rgba(231, 172, 207, 0.5); border-radius: 3px; padding: 0 3px; }
 ul.pubs .venue { color: var(--lilac); }
-ul.pubs .meta a.bracket { color: var(--lilac); }
-ul.pubs .meta .bk { color: var(--lilac); }
+ul.pubs .meta a.chip { color: var(--lilac); }
 ul.pubs .note { color: var(--muted); font-size: var(--fs-small); margin-top: 2px; }
 
 /* Waving hand: one gentle wave on load, then still */
@@ -176,7 +182,9 @@ main.notfound { padding-top: 72px; }
   header.site, .socials, .back-top, .center, .footnote, .updated { display: none !important; }
   body { background: #fff; color: #000; font-size: 11pt; }
   a { color: #000 !important; text-decoration: none !important; background: none !important; }
-  a.bracket, ul.pubs .venue { color: #000 !important; }
+  a.chip, ul.pubs .venue { color: #000 !important; }
+  a.chip { border: 0; padding: 0; }
+  a.chip::before { content: "["; } a.chip::after { content: "]"; }
   ul.pubs .me { background: none; text-decoration: underline; }
   .reveal { opacity: 1; transform: none; }
   main { padding: 0; }

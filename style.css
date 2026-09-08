@@ -152,7 +152,7 @@ figcaption { font-size: var(--fs-small); color: var(--muted); margin-top: 8px; }
 /* Papers page */
 .footnote { font-size: var(--fs-small); margin-top: 4px; }
 .center { text-align: center; }
-.back-top { margin-top: 56px; }
+.back-top { margin-top: 88px; }
 a.button { display: inline-block; padding: 8px 18px; border: 1.5px solid #3d3d3a; border-radius: 4px; color: #3d3d3a; }
 a.button:hover { text-decoration: none; background: var(--card); }
 h2.year { text-decoration: underline; text-underline-offset: 6px; margin: 40px 0 10px; }

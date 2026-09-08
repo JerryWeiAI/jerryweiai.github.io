@@ -1,0 +1,107 @@
+:root {
+  --bg: #fdfdfc;
+  --fg: #1c1c1a;
+  --muted: #6b6b66;
+  --rule: #e6e5e0;
+  --accent: #1f5fbf;
+  --accent-hover: #164a99;
+  --card: #f5f4f0;
+  --max: 720px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #131312;
+    --fg: #ececea;
+    --muted: #9c9c96;
+    --rule: #2a2a28;
+    --accent: #7fb0ff;
+    --accent-hover: #a9c9ff;
+    --card: #1c1c1a;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-hover); text-decoration: underline; }
+img { max-width: 100%; height: auto; }
+
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+
+header.site {
+  border-bottom: 1px solid var(--rule);
+}
+header.site .wrap {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 12px 24px; padding-top: 18px; padding-bottom: 18px;
+}
+.logo img { height: 34px; width: auto; display: block; }
+@media (prefers-color-scheme: dark) { .logo img { filter: invert(1); } }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 22px; flex-wrap: wrap; }
+nav a { color: var(--fg); font-weight: 500; }
+nav a[aria-current="page"] { color: var(--accent); }
+nav a:hover { text-decoration: none; color: var(--accent); }
+
+main { padding: 40px 0 64px; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 20px; letter-spacing: -0.01em; }
+h2 { font-size: 1.35rem; margin: 44px 0 14px; letter-spacing: -0.01em; }
+h3 { font-size: 1.05rem; margin: 26px 0 8px; }
+p { margin: 0 0 16px; }
+.muted { color: var(--muted); }
+.small { font-size: 0.92rem; }
+
+.intro { display: flex; gap: 32px; align-items: flex-start; flex-wrap: wrap; }
+.intro img.headshot {
+  width: 190px; height: 190px; object-fit: cover; border-radius: 12px; flex: none;
+}
+.intro .text { flex: 1 1 320px; }
+
+.links { list-style: none; padding: 0; margin: 12px 0 0; display: flex; flex-wrap: wrap; gap: 8px 18px; }
+.links li a { font-weight: 500; }
+
+ol.papers, ul.plain { padding-left: 0; list-style: none; margin: 0; }
+ol.papers li, ul.plain li { padding: 12px 0; border-bottom: 1px solid var(--rule); }
+ol.papers li:last-child, ul.plain li:last-child { border-bottom: 0; }
+.title { font-weight: 600; }
+.authors { display: block; color: var(--muted); font-size: 0.95rem; }
+.venue { display: block; font-size: 0.95rem; }
+.plinks { display: block; font-size: 0.92rem; margin-top: 2px; }
+.plinks a + a::before { content: "·"; color: var(--muted); margin: 0 7px 0 0; }
+.plinks a + a { margin-left: 6px; }
+.note { font-size: 0.85rem; color: var(--muted); margin-top: 6px; }
+
+.timeline { list-style: none; padding: 0; margin: 0; border-left: 2px solid var(--rule); }
+.timeline li { position: relative; padding: 0 0 28px 26px; }
+.timeline li::before {
+  content: ""; position: absolute; left: -7px; top: 8px; width: 12px; height: 12px;
+  border-radius: 50%; background: var(--accent);
+}
+.timeline .role { font-weight: 600; }
+.timeline .org { display: block; }
+.timeline .when { display: block; font-size: 0.95rem; }
+.timeline .where { display: block; color: var(--muted); font-size: 0.92rem; }
+.timeline ul.sub { list-style: none; padding: 10px 0 0 0; margin: 0; }
+.timeline ul.sub li { padding: 4px 0 4px 16px; border-left: 2px solid var(--rule); }
+.timeline ul.sub li::before { display: none; }
+
+table.prs { border-collapse: collapse; margin: 8px 0 16px; font-size: 0.95rem; }
+table.prs th, table.prs td { text-align: left; padding: 6px 18px 6px 0; border-bottom: 1px solid var(--rule); }
+table.prs th { font-weight: 600; }
+
+dl.contact { margin: 0; }
+dl.contact div { display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--rule); }
+dl.contact dt { flex: 0 0 130px; font-weight: 600; margin: 0; }
+dl.contact dd { margin: 0; }
+
+figure { margin: 20px 0; }
+figure img { border-radius: 10px; display: block; }
+figcaption { font-size: 0.9rem; color: var(--muted); margin-top: 8px; }
+
+footer.site { border-top: 1px solid var(--rule); padding: 20px 0 32px; color: var(--muted); font-size: 0.9rem; }

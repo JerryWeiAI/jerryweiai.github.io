@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Wei New Roman";
+  src: url("fonts/WeiNewRoman-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Neutrals follow Anthropic's brand palette: ivory background, slate text. */
 :root {
   --bg: #faf9f5;        /* ivory light */
@@ -63,6 +71,7 @@ p { margin: 0 0 16px; }
   width: 190px; height: 190px; object-fit: cover; border-radius: 12px; flex: none;
 }
 .intro .text { flex: 1 1 320px; }
+.intro h1 { font-family: "Wei New Roman", cursive; font-weight: 400; font-size: 2.6rem; margin-top: 4px; }
 
 .links { list-style: none; padding: 0; margin: 12px 0 0; display: flex; flex-wrap: wrap; gap: 8px 18px; }
 .links li a { font-weight: 500; }

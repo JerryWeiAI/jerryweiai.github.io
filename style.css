@@ -47,7 +47,7 @@
   --accent: #0072bb;        /* French blue, same as light */
   --accent-hover: #005a94;
   --lilac: #86608e;         /* French lilac, same as light */
-  --hl: rgba(252, 142, 172, 0.45);  /* flamingo pink */
+  --hl: rgba(252, 142, 172, 0.3);   /* flamingo pink */
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }

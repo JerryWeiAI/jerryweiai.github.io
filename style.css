@@ -55,7 +55,7 @@ nav a { color: var(--fg); }
 nav a[aria-current="page"] { color: var(--accent); }
 nav a:hover { text-decoration: none; color: var(--accent); }
 
-main { padding: 40px 0 64px; }
+main { padding: 40px 0 80px; }
 h1, h2, h3 { font-family: "Caveat", cursive; font-weight: 400; line-height: 1.15; }
 h1 { font-size: 3rem; margin: 0 0 20px; }
 h2 { font-size: 2.1rem; margin: 44px 0 12px; }
@@ -107,7 +107,8 @@ ul.tl .body > div { line-height: 1.7; }
 ul.tl .role { font-size: 1.15rem; }
 ul.tl .role u { text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
 ul.tl .where { color: var(--muted); }
-ul.tl .sub { margin-top: 18px; }
+ul.tl .sub { margin-top: 16px; font-size: 0.9rem; }
+ul.tl .sub .role { font-size: 1rem; }
 ul.tl .stem { flex: 1; width: 2px; background: #5e5d59; margin: 24px 0 8px; position: relative; }
 ul.tl .stem::before, ul.tl .stem::after { content: ""; position: absolute; left: -3px; width: 8px; height: 8px; border-radius: 50%; background: #5e5d59; }
 ul.tl .stem::before { top: -4px; }
@@ -132,4 +133,3 @@ figure { margin: 20px 0; }
 figure img { border-radius: 10px; display: block; }
 figcaption { font-size: 0.9rem; color: var(--muted); margin-top: 8px; }
 
-footer.site { padding: 20px 0 32px; color: var(--muted); font-size: 0.9rem; }

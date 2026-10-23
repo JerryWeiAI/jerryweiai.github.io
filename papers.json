@@ -2,6 +2,20 @@
   "me": "Jerry Wei",
   "papers": [
     {
+      "id": "scaling-laws-for-safety-probes",
+      "year": 2026,
+      "title": "Scaling Laws for Safety Probes",
+      "url": "https://arxiv.org/abs/2610.30678",
+      "authors": [
+        "Yuchen Wu",
+        "Jerry Wei"
+      ],
+      "topics": [
+        "safety",
+        "lm"
+      ]
+    },
+    {
       "id": "jailbroken-frontier-models-retain-their-capabilities",
       "year": 2026,
       "title": "Jailbroken Frontier Models Retain Their Capabilities",
